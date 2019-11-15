@@ -1,0 +1,8 @@
+#container {
+    display: flex;
+}
+
+.big_formulaire {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "marque": "Audi",
+        "modele": "A1",
+        "type": "citadine",
+        "image_url": "./assets/images/audi_a1.jpg"
+    },
+    {
+        "marque": "Volkswagen",
+        "modele": "Passat",
+        "type": "berline",
+        "image_url": "./assets/images/vw_passat.jpg"
+    },
+    {
+        "marque": "Volkswagen",
+        "modele": "Golf",
+        "type": "compacte",
+        "image_url": "./assets/images/vw_golf.jpg"
+    },
+    {
+        "marque": "Mazda",
+        "modele": "CX-5",
+        "type": "SUV",
+        "image_url": "./assets/images/mz_cx5.jpg"
+    }
+]

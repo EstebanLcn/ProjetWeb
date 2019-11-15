@@ -1,0 +1,64 @@
+.head {
+    text-align: center;
+}
+
+.head img {
+    max-width: 100%;
+    height: auto;
+}
+
+.corps {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.corps h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.carousel {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+.title_secondary{
+    margin-bottom: 3%;
+}
+.head_img{
+    width: 100%;
+}
+.presentation{
+    margin: 2%;
+    text-align: center;
+  
+}
+.card-group{
+    margin-right: 5%;
+    margin-bottom: 2%;
+ 
+}
+.triple .card{
+    box-shadow: 12px 12px 2px 1px black;
+}
+.div_event{
+    margin: auto;
+    border: solid;
+   
+    flex-wrap: wrap;
+}
+.triple{
+    margin-left: 35%;
+    
+}
+#container{
+    background-color: hsla(39,100%,66%,1);
+}
+.jean{
+    position: relative;
+}
+.linkz{
+    background-color: black;
+    color: hsla(39,100%,66%,1);
+}

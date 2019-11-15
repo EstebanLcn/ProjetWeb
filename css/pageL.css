@@ -1,0 +1,33 @@
+.card{
+   
+    margin-top: 30px;
+   margin-left: 7%;
+    max-height: 500px;
+}
+.title{
+    
+    text-align: center;
+}
+.big{
+  
+display: flex;
+justify-content: space-around;
+align-content: flex-start;
+flex-wrap: wrap;
+max-width: 85%;   
+  
+}
+.card-img-top{
+   
+        height: 250px;
+}
+.pages{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: center;
+    min-width: 100%;
+}
+#container{
+    display: flex;
+}

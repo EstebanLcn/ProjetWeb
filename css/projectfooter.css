@@ -1,0 +1,24 @@
+.jean {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+
+
+.jean a {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+    justify-content: center;
+  
+
+}
+
+a:hover {
+    color: hsla(39,100%,66%,1);
+}
