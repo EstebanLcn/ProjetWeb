@@ -1,14 +1,9 @@
-
 <link rel="stylesheet" type="text/css" href="../css/style.css">
-
 
 <div id="footer_menu">
     <ul>
         <div class="link_ref">
-
             <li class="link_ref"><a href="index.html"><img id="logo_bde" src="./image/bde.png"></i> </a></li>
-
-
 
             <li class="link_ref"><a href="propos.php">à propos</a></li>
             <li class="link_ref"><a href="contact.php">Contact</a></li>

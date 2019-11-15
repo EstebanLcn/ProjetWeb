@@ -105,8 +105,6 @@
 
 
 
-
-
         var bouton = document.getElementById("bouton")
         bouton.addEventListener("click", clic)
 

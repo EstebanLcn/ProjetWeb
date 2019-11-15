@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="utf-8">
-
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
     <script src="../assets/vendors/jquery-3.4.1.min.js"></script>
@@ -13,7 +12,6 @@
 
     <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <title>BDE CESI</title>
-
     <link rel="icon" href="./image/blacktree.png" />
     <script src="./JS/main.js"></script>
 </head>
@@ -22,7 +20,6 @@
     <header>
         <?php include("menu.php") ?>
     </header>
-
     <div id="conteneur">
         <section>
             <div class="myform">
@@ -35,10 +32,11 @@
                     / Type :
                     <select onchange="this.form.submit()" name="sort">
                         <option value=""></option>
-                        <option value="shoe">shoe</option>
+                        <option value="mug">mug</option>
                         <option value="pull">pull</option>
-                        <option value="socket">socket</option>
-
+                        <option value="divers">divers</option>
+                        <option value="stylo/crayon">stylo/crayon</option>
+                        <option value="pot">pot</option>
                     </select>
                 </form>
             </div>
@@ -56,7 +54,6 @@
             </aside>
         </div>
     </div>
-
     <footer><?php include_once 'footer.php' ?> </footer>
     <script>
         $(window).on("scroll", function() {

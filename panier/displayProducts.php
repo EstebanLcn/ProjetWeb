@@ -1,7 +1,6 @@
 <?php
 require_once '_header.php';
 
-
 if (isset($_GET['sort'])) {
     switch ($_GET['sort']) {
         case 'ASC':
@@ -10,15 +9,22 @@ if (isset($_GET['sort'])) {
         case 'DESC':
             $products = $DB->query('SELECT * FROM article ORDER BY price DESC');
             break;
-        case 'socket':
-            $products = $DB->query('SELECT * FROM article WHERE type_article = "socket"');
+        case 'mug':
+            $products = $DB->query('SELECT * FROM article WHERE type_article = "mug"');
             break;
         case 'pull':
             $products = $DB->query('SELECT * FROM article WHERE type_article = "pull"');
             break;
-        case 'shoe':
-            $products = $DB->query('SELECT * FROM article WHERE type_article = "shoe"');
+        case 'divers':
+            $products = $DB->query('SELECT * FROM article WHERE type_article = "divers"');
             break;
+        case 'stylo/crayon':
+            $products = $DB->query('SELECT * FROM article WHERE type_article = "stylo/crayon"');
+            break;
+        case 'pot':
+            $products = $DB->query('SELECT * FROM article WHERE type_article = "pot"');
+            break;
+
         default:
             $products = $DB->query('SELECT * FROM article');
     }
@@ -52,15 +58,12 @@ foreach ($products as $product) :
     <?php
     endforeach;
     /*$bdd = new PDO(
-
     'mysql:host=localhost;dbname=prosit;charset=utf8',
     'root',
     ''
 );*/
 
-
     /*
-
 foreach ($tab_Product as $product) :
     echo "<div class='displayprod'>
 	<img src='" . "/" . $product['urlImage'] . "', class='prodpic' />
@@ -71,6 +74,4 @@ foreach ($tab_Product as $product) :
 	</div>";
 endforeach;
 */
-
     ?>
-
