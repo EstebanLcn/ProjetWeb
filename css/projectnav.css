@@ -8,7 +8,7 @@
 .ghigh ul {
     height: 40%;
     position: sticky;
-   top:0;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -25,14 +25,14 @@
     margin-right: 20px;
 }
 
-
 a:hover {
-    color: hsla(39,100%,66%,1);
+    color: hsla(39, 100%, 66%, 1);
 }
 
 p {
     color: #000000;
 }
-.fin{
+
+.fin {
     margin-top: 5%;
 }

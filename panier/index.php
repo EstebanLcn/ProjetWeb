@@ -103,8 +103,9 @@
             }
         })
 
-        var liste = ["t-shirt", "shirt", "mug", "tablier", "tableau", "chaise", "biberon"]
-        autocomplete(document.getElementById("search"), liste);
+
+
+
 
         var bouton = document.getElementById("bouton")
         bouton.addEventListener("click", clic)

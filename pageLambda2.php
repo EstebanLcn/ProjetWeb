@@ -27,7 +27,8 @@
       <div>
 
         <div class="big">
-        <div class="card" style="width: 18rem;">
+
+          <div class="card" style="width: 18rem;">
             <img src="images/surf.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Association surf</h5>
@@ -61,6 +62,7 @@
               <p class="card-text">Si vous aimez les envolées lyriques et débats enflammés alors ce n'est pas la bonne association. Viens quand même.</p>
               <a href="description8.php" class="btn btn-warning">Description</a>
               <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
+
             </div>
           </div>
           <nav class="pages">
@@ -83,10 +85,13 @@
 
 
 
-        <a href="mentions_legales.php">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
+        <<<<<<< HEAD <a href="mentions_legales.php">Mentions légales</a>
+          =======
+          <a href="#">Mentions légales</a>
+          >>>>>>> principale
+          <a href="#">Contactez-nous</a>
+          <a href="#">Menu</a>
+          <a href="#">@Home</a>
 
       </footer>
 

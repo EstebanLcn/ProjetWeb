@@ -5,20 +5,15 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    
 }
-
-
 
 .jean a {
     color: white;
     font-size: 20px;
     margin-right: 20px;
     justify-content: center;
-  
-
 }
 
 a:hover {
-    color: hsla(39,100%,66%,1);
+    color: hsla(39, 100%, 66%, 1);
 }

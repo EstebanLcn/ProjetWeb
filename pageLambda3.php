@@ -27,6 +27,7 @@
 
         <div class="big">
           <div class="card" style="width: 18rem;">
+
             <img src="images/musique.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Association musique</h5>
@@ -60,6 +61,7 @@
               <p class="card-text">Le "Ou est Thomas" et le jeu des 7 différences font de cette association une des meilleures.</p>
               <a href="description12.php" class="btn btn-warning">Description</a>
               <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
+
             </div>
           </div>
           <nav class="pages">
@@ -82,10 +84,13 @@
 
 
 
-        <a href="mentions_legales.php">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
+        <<<<<<< HEAD <a href="mentions_legales.php">Mentions légales</a>
+          =======
+          <a href="#">Mentions légales</a>
+          >>>>>>> principale
+          <a href="#">Contactez-nous</a>
+          <a href="#">Menu</a>
+          <a href="#">@Home</a>
 
       </footer>
 
