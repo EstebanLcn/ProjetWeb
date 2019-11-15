@@ -1,0 +1,14 @@
+DROP PROCEDURE IF EXISTS deletePicture;
+
+DELIMITER $$
+
+CREATE PROCEDURE deletePicture (
+    IN input_id_event VARCHAR
+(100)
+
+)
+BEGIN
+START TRANSACTION;
+DELETE FROM picture WHERE id__Event
+COMMIT;
+END$$
