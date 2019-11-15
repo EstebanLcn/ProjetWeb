@@ -5,6 +5,13 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
+.vente {
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    margin-left: 5%;
+    margin-right: 6%;
+}
+
 #article_h1 {
     text-align: center;
     margin-top: 0;

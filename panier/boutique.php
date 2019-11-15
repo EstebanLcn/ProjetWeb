@@ -18,16 +18,13 @@
     <script src="./JS/main.js"></script>
 </head>
 
-
 <body>
     <header>
         <?php include("menu.php") ?>
     </header>
 
     <div id="conteneur">
-
         <section>
-
             <div class="myform">
                 <form class="myform" methode="get" action="boutique.php">
                     Trier :
@@ -45,26 +42,19 @@
                     </select>
                 </form>
             </div>
-
             <div class=element>
                 <div class="products">
                     <?php include("displayProducts.php"); ?>
                 </div>
             </div>
-
-
-
         </section>
         <div class=element>
-
             <aside>
                 BEST PRODUCTS : <br>
                 <?php include("bestProducts.php"); ?>
                 <br>
-                END
             </aside>
         </div>
-
     </div>
 
     <footer><?php include_once 'footer.php' ?> </footer>

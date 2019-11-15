@@ -94,9 +94,6 @@ require_once '_header.php';
                 <?php endforeach; ?>
                 </tbody>
             </table>
-
-
-
             <br>
             <input class="btn btn-dark" type="submit" value="recalculer">
             <br>
@@ -123,18 +120,28 @@ require_once '_header.php';
                             </div>
                         </th>
                         <th>
-                            <input class="btn btn-success" type="submit" value="Paiement" OnClick="window.location.href=\'paiement.php\'">
-                        </th>
-                        <th>
-                            <input type="checkbox" id="accept">
-                            <label for="accept"></label>
-                        </th>
-                    </tr>
-                </tbody>
-            </table>
+        </form>
+        <form class="myform" action="paiement.php" method="post">
+            <button name="paiement" type="submit" value="paiement" class="btn btn-success">paiement</button>
+
+
+            </th>
+            <th>
+
+                <input name="check" value="check" type="checkbox" id="accept">
+                <label for="accept"><a href="conditions_vente.php">(cliquez pour voir les conditions de ventes)</a></label>
+        </form>
+        </th>
+
+        </tr>
+        </tbody>
+        </table>
     </div>
 
+<<<<<<< Updated upstream
     </form>
+=======
+>>>>>>> Stashed changes
     <footer>
         <?php include_once 'footer.php' ?>
     </footer>

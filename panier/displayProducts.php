@@ -38,7 +38,7 @@ if (isset($_GET['sort'])) {
 foreach ($products as $product) :
     ?>
         <div class='singleArticle'> <?= $product->name ?>
-            <img class='image' src="image/<?= $product->urlImage ?>" alt=''>
+            <a href="#<?= $product->id ?>" class="image"> <img class='image' src="image/<?= $product->urlImage ?>" alt=''></a>
 
             <div class='articleContent'>
                 <h3><?php $product->description ?></h3>
