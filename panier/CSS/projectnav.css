@@ -1,0 +1,35 @@
+.ghigh {
+    background-color: #000000;
+    height: 1300px;
+    min-height: 400px;
+    width: 20%;
+}
+
+.ghigh ul {
+    height: 20%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ghigh ul li {
+    list-style-type: none;
+}
+
+.ghigh ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+a:hover {
+    background-color: green;
+}
+
+p {
+    color: #000000;
+}
