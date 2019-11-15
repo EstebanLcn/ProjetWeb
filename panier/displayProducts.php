@@ -1,6 +1,7 @@
 <?php
 require_once '_header.php';
 
+
 if (isset($_GET['sort'])) {
     switch ($_GET['sort']) {
         case 'ASC':
@@ -63,6 +64,7 @@ foreach ($products as $product) :
     ''
 );*/
 
+
     /*
 foreach ($tab_Product as $product) :
     echo "<div class='displayprod'>
@@ -74,4 +76,5 @@ foreach ($tab_Product as $product) :
 	</div>";
 endforeach;
 */
+
     ?>

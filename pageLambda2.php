@@ -19,6 +19,7 @@
 
   <div id="container">
 
+
     <?php include("nav.php");
     ?>
     <div class="title">
@@ -26,40 +27,42 @@
       <div>
 
         <div class="big">
+
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+            <img src="images/surf.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association surf</h5>
+              <p class="card-text">Si vous aimez override en swiftant sur le backside. Cette association est faite pour vous.</p>
+              <a href="description5.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+            <img src="images/foot.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association foot</h5>
+              <p class="card-text">Coupe du monde, Mbappé et Pierre Ménes sont les raisons évidentes de rejoindre cette association.</p>
+              <a href="description6.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+            <img src="images/Faker.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association e-sport</h5>
+              <p class="card-text">Si t'aimes jouer tout en disant que tu es dans une association alors que c'est faux. Rejoins l'arnaque.</p>
+              <a href="description7.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+            <img src="images/eloquence.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association éloquence</h5>
+              <p class="card-text">Si vous aimez les envolées lyriques et débats enflammés alors ce n'est pas la bonne association. Viens quand même.</p>
+              <a href="description8.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
+
             </div>
           </div>
           <nav class="pages">
@@ -82,10 +85,13 @@
 
 
 
-        <a href="#">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
+        <<<<<<< HEAD <a href="mentions_legales.php">Mentions légales</a>
+          =======
+          <a href="#">Mentions légales</a>
+          >>>>>>> principale
+          <a href="#">Contactez-nous</a>
+          <a href="#">Menu</a>
+          <a href="#">@Home</a>
 
       </footer>
 

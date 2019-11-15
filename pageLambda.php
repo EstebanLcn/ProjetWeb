@@ -28,39 +28,41 @@
 
         <div class="big">
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+
+            <img src="images/basket.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association Basket</h5>
+              <p class="card-text">Si vous avez envie de fouler le parquet et mettre des trois points de l'autre bout du terrain. Cette association est faite pour vous.</p>
+              <a href="description.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+            <img src="images/biblio.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association Bibliothèque</h5>
+              <p class="card-text">Si vous avez lu des "classiques" et que vous aimez dire chut avec votre doigt devant votre bouche. Cette association est faite pour vous.</p>
+              <a href="description2.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+            <img src="images/hacker.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Root me</h5>
+              <p class="card-text">Si vous pensez qu'hackez un compte dofus et de jouer a Watch Dogs fait de vous un anonymous. Cette association est faite pour vous.</p>
+              <a href="description3.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+            <img src="images/muscu.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association muscu</h5>
+              <p class="card-text">Damnnnnnn les gens, les petites</p>
+              <a href="description4.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
+
             </div>
           </div>
           <nav class="pages">
@@ -83,10 +85,13 @@
 
 
 
-        <a href="#">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
+        <<<<<<< HEAD <a href="mentions_legales.php">Mentions légales</a>
+          =======
+          <a href="#">Mentions légales</a>
+          >>>>>>> principale
+          <a href="#">Contactez-nous</a>
+          <a href="#">Menu</a>
+          <a href="#">@Home</a>
 
       </footer>
 

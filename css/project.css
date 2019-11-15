@@ -1,25 +1,16 @@
 .high {
   display: flex;
-  background-color: royalblue;
-  justify-content: space-between;
-
+  background-color: black;
+  border-bottom: 4mm ridge hsla(39, 100%, 66%, 1);
 }
 
 .hey {
-  text-align: center;
-  color: rebeccapurple;
-}
-
-.ho {
-  color: yellow;
-  text-align: right;
-  padding: 20px;
-  margin-right: 5px;
-
+  color: white;
+  margin-left: 37%;
 }
 
 a:hover {
-  background-color: gold;
+  background-color: hsla(39, 100%, 66%, 1);
 }
 
 .icon {

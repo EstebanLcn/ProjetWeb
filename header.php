@@ -12,6 +12,7 @@
     <header>
         <div class="high">
             <img class="icon" src="images/bde.png" alt="logo_bde">
+
             <h1 class="hey">BDE Cesi Bordeaux</h1>
             <div class="ho"> <a href="#">S'inscrire</a>
 

@@ -77,7 +77,8 @@ session_start();
 
 
 
-    <a href="#">Mentions légales</a>
+    <a href="mentions_legales.php">Mentions légales</a>
+
     <a href="#">Contactez-nous</a>
     <a href="#">Menu</a>
     <a href="#">@Home</a>

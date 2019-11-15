@@ -27,39 +27,41 @@
 
         <div class="big">
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+
+            <img src="images/musique.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association musique</h5>
+              <p class="card-text">Si vous avez le sens du rythme et aimer faire des soirées karaokés alors cette association est faite pour vous.</p>
+              <a href="description9.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+            <img src="images/combat.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association combat</h5>
+              <p class="card-text">On attends l'heure, la date, le jour. Octogone.</p>
+              <a href="description10.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+            <img src="images/drole.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association humour</h5>
+              <p class="card-text">Si vous voulez apprendre à être drôle, cette association est faite pour vous.</p>
+              <a href="description11.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img src="images/bde.png" class="card-img-top" alt="...">
+            <img src="images/jeu.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="description/description.php" class="btn btn-primary">Description</a>
-              <a href="formulaireInscription.php" class="btn btn-primary">Inscription</a>
+              <h5 class="card-title">Association jeux de sociétés</h5>
+              <p class="card-text">Le "Ou est Thomas" et le jeu des 7 différences font de cette association une des meilleures.</p>
+              <a href="description12.php" class="btn btn-warning">Description</a>
+              <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
+
             </div>
           </div>
           <nav class="pages">
@@ -82,10 +84,13 @@
 
 
 
-        <a href="#">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
+        <<<<<<< HEAD <a href="mentions_legales.php">Mentions légales</a>
+          =======
+          <a href="#">Mentions légales</a>
+          >>>>>>> principale
+          <a href="#">Contactez-nous</a>
+          <a href="#">Menu</a>
+          <a href="#">@Home</a>
 
       </footer>
 

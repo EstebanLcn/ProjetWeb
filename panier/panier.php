@@ -1,6 +1,7 @@
 <?php
 include_once 'menu.php';
 require_once '_header.php';
+
 ?>
 <!doctype html>
 <html lang="fr">
@@ -8,6 +9,7 @@ require_once '_header.php';
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+
     <link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
     <script src="../assets/vendors/jquery-3.4.1.min.js"></script>
 
@@ -17,11 +19,13 @@ require_once '_header.php';
     <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
 
     <title>Panier</title>
+
     <link rel="icon" href="./image/blacktree.png" />
     <script src="./JS/main.js"></script>
 </head>
 
 <body>
+
     <h1 id=article_h1>Nombre d'article : <?= $panier->count(); ?><br> </h1>
     <div class="box">
         <form method="post" action="panier.php">
@@ -133,6 +137,7 @@ require_once '_header.php';
         </tbody>
         </table>
     </div>
+
 
     <footer>
         <?php include_once 'footer.php' ?>
