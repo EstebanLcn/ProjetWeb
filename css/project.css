@@ -1,0 +1,30 @@
+.high {
+  display: flex;
+  background-color: royalblue;
+  justify-content: space-between;
+
+}
+
+.hey {
+  text-align: center;
+  color: rebeccapurple;
+}
+
+.ho {
+  color: yellow;
+  text-align: right;
+  padding: 20px;
+  margin-right: 5px;
+
+}
+
+a:hover {
+  background-color: gold;
+}
+
+.icon {
+  position: relative;
+  left: 0;
+  width: 65px;
+  height: 65px;
+}
