@@ -4,6 +4,7 @@
 
 <head>
     <meta charset="utf-8">
+
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 
     <link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
@@ -27,10 +28,12 @@
         });
     </script>
 
+
 </head>
 
 
 <body>
+
     <header>
         <nav class="menu_priority">
             <div class="hamburger"> <i class="fa fa-bars fa-2x"></i></div>
@@ -52,7 +55,5 @@
             </div>
         </nav>
     </header>
-
-
 
 </body>

@@ -1,3 +1,4 @@
+
 .card {
     margin-top: 30px;
     margin-left: 7%;
@@ -21,6 +22,7 @@
 }
 
 .pages {
+
     padding-top: 3%;
     padding-bottom: 3%;
     display: flex;
@@ -28,6 +30,8 @@
     min-width: 100%;
 }
 
+
 #container {
+
     display: flex;
 }

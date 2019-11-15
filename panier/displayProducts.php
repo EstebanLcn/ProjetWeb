@@ -1,6 +1,7 @@
 <?php
 require_once '_header.php';
 
+
 if (isset($_GET['sort'])) {
     switch ($_GET['sort']) {
         case 'ASC':
@@ -51,12 +52,15 @@ foreach ($products as $product) :
     <?php
     endforeach;
     /*$bdd = new PDO(
+
     'mysql:host=localhost;dbname=prosit;charset=utf8',
     'root',
     ''
 );*/
 
+
     /*
+
 foreach ($tab_Product as $product) :
     echo "<div class='displayprod'>
 	<img src='" . "/" . $product['urlImage'] . "', class='prodpic' />
@@ -67,4 +71,6 @@ foreach ($tab_Product as $product) :
 	</div>";
 endforeach;
 */
+
     ?>
+
