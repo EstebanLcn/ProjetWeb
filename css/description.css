@@ -1,0 +1,27 @@
+.descriptiones{
+    text-align: center;
+    width: 100%;
+}
+.images{
+    justify-content: center;
+     width: 65px;
+    height: 65px;
+}
+
+.Link_inscription{
+    position: relative;
+    margin-left: 70%;
+}
+p{
+    text-align: justify;
+    color:green;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.prg{
+    display: flex;
+
+
+}
