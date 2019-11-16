@@ -15,14 +15,15 @@ $query = $DB->db->prepare('CALL showEvent()');
           ?>
             <div class="col-md-6 ">
             <div class="card mb-4 shadow-sm">
-            <?php echo "<img src='../img/event/". $event['id']."' class='card-img-top' alt='Image'> "; ?>
+            <?php echo "<img src='../images/". $event['url']."' class='card-img-top' alt='Image'> "; ?>
               <div class="card-body">
               <p class="card-text"> <?= $event['name'] ?>  </p>
                 <div class="d-flex justify-content-between align-items-center"\>
                   <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
+<?php//formulaire de création de commentaires?>                  
                     <form method="get" action="addComment.php">
-                    <input type="hidden" name="id_event" value='<?= $event['id'] ?>'> 
+                    <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'> 
                       <input type="hidden" name="id_user" value='1'>
                       <input type="text" name="content">
                     </form>
