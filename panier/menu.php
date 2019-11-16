@@ -39,7 +39,7 @@
             <div class="symbole"><a href="index.html"><img id="logo_bde" src="./image/bde.png"></i> </a></div>
             <div class="menu">
                 <ul>
-                    <li><a href="index.php">Accueil</a></li>
+                    <li><a href="../home.php">Accueil</a></li>
                     <li><a href="boutique.php">Boutique</a></li>
                     <li><a href="panier.php">panier</a></li>
                     <li> <span class="items">ITEMS
