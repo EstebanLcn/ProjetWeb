@@ -18,9 +18,9 @@ require_once '_header.php';
 
     <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <link rel="icon" href="../images/bde.png" />
-    <title>Panier</title>
 
-    <link rel="icon" href="./image/blacktree.png" />
+    <title>Panier </title>
+
     <script src="./JS/main.js"></script>
 </head>
 

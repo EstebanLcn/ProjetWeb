@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/project.css" />
   <link rel="stylesheet" href="css/pageL.css" />
 
-  <link rel="icon" href="../images/bde.png" />
+  <link rel="icon" href="images/bde.png" />
   <title>page associations</title>
 </head>
 

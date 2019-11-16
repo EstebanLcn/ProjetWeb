@@ -35,7 +35,8 @@ body {
 }
 
 table, td {
-    width: 80em;
+    margin-right: 5%;
+    margin-left: 5%;
     border: 2px solid #333;
 }
 
@@ -144,6 +145,19 @@ nav ul li a:hover {
 .ho a:hover {
     text-decoration: underline;
     color: #fff;
+}
+
+.hi a {
+    padding: 5 5px 5px 5px;
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin: 5 0 0 0;
+}
+
+.hi a:hover {
+    text-decoration: underline;
+    color: #000;
 }
 
 .link_ref {
