@@ -1,0 +1,48 @@
+@media screen and (min-width: 1000px) {
+    body {
+        background-image: url('../images/main.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        font-family: 'Numans', sans-serif;
+    }
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    font-family: arial;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+/*@media screen and (min-width: 1000px) .contenu {
+    bottom: 0;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 33em;
+    z-index: 1;
+}*/
+
+.contenu {
+    background: #f2f2f2 none repeat scroll 0 0;
+    text-align: center;
+}
+
+.cent {
+    margin-right: 8%;
+}

@@ -77,11 +77,11 @@
 
 
                 ?>
-            </p>
-            <p>
                 <label>Déjà inscrit ?</label>
                 <a class="btn btn-warning" href="connexion.php?var=" role="button">Connexion</a>
+                <a class="btn btn-dark" href="../home.php" role="button">Home</a>
             </p>
+
         </div>
         <div>
             <div></div>

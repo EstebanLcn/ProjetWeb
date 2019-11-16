@@ -10,7 +10,7 @@
 .corps {
     width: 100%;
     text-align: center;
-    
+
 }
 
 .corps h2 {
@@ -23,42 +23,57 @@
     margin-top: 5%;
     margin-bottom: 1%;
 }
-.title_secondary{
+
+.title_secondary {
     margin-bottom: 3%;
 }
-.head_img{
+
+.head_img {
     width: 100%;
 }
-.presentation{
+
+.presentation {
     margin: 2%;
     text-align: center;
-  
+
 }
-.card-group{
+
+.card-group {
     margin-right: 5%;
     margin-bottom: 2%;
- 
+
 }
-.triple .card{
+
+.triple .card {
     box-shadow: 12px 12px 2px 1px black;
 }
-.div_event{
+
+.div_event {
     margin: auto;
     border: solid;
-   
+
     flex-wrap: wrap;
 }
-.triple{
+
+.triple {
     margin-left: 35%;
-    
+
 }
-#container{
-    background-color: hsla(39,100%,66%,1);
+
+#container {
+    background-color: hsla(39, 100%, 66%, 1);
 }
-.jean{
+
+.jean {
     position: relative;
 }
-.linkz{
+
+.linkz {
     background-color: black;
-    color: hsla(39,100%,66%,1);
+    color: hsla(39, 100%, 66%, 1);
+}
+
+.inscription {
+    display: inline-block;
+    margin-left: 20%;
 }
