@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="css/project.css" />
   <link rel="stylesheet" href="css/pageL.css" />
 
-  <title>PageLambda</title>
+  <link rel="icon" href="images/bde.png" />
+  <title>page associations</title>
 </head>
 
 <body>

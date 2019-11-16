@@ -8,8 +8,8 @@ session_start();
 <link rel="stylesheet" href="css/projectfooter.css" />
 <link rel="stylesheet" href="css/projectnav.css" />
 <link rel="stylesheet" href="css/project.css" />
-<title>Hey</title>
-
+<link rel="icon" href="images/bde.png" />
+<title>Inscription</title>
 
 </head>
 

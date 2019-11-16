@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/project.css" />
     <link rel="stylesheet" href="css/description.css" />
 
-    <title>PageLambda</title>
+    <link rel="icon" href="images/bde.png" />
+    <title>Description d'activité</title>
 </head>
 
 <body>
