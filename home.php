@@ -20,7 +20,25 @@
   <div class="head">
     <img src="images/head_bde.jpg" alt="" class="head_img">
   </div>
-  <?php include("header.php"); ?>
+  <header>
+    <div class="high">
+      <a href="home.php"> <img class="icon" src="images/bde.png" alt="logo_bde"></a>
+
+      <h1 class="hey">BDE Cesi Bordeaux</h1>
+      <?php
+      session_start();
+      if (isset($_SESSION['user_name'])) {
+        echo '<div class="ho"> <h5><a href="connexion/profil.php">' . $_SESSION['user_name']  . '</a> |  <a href="connexion/deconnexion.php">Deconnexion</a></h5></div>';
+      } else {
+        echo '
+                <div class="lienHeader">
+                <div class="ho"> <a href="connexion/mention.php"> S\'inscrire</a>  |  <a href="connexion/connexion.php?var=">Se connecter</a>
+                </div>';
+      }
+      ?>
+    </div>
+  </header>
+
   <div id="container">
     <?php include("nav.php");
     ?>
