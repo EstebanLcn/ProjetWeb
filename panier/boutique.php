@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="../assets/vendors/fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="icon" href="../images/bde.png" />
 
-    <title>BDE CESI</title>
+    <title>Boutique</title>
 
-    <link rel="icon" href="./image/blacktree.png" />
     <script src="./JS/main.js"></script>
 
 </head>

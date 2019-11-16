@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/projectnav.css" />
   <link rel="stylesheet" href="css/project.css" />
   <link rel="stylesheet" href="css/contact_us.css" />
-
+  <link rel="icon" href="images/bde.png" />
   <title>Contact</title>
 </head>
 

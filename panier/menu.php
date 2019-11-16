@@ -15,7 +15,6 @@
 
     <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
 
-    <link rel="icon" href="./image/blacktree.png" />
     <script src="./JS/main.js"></script>
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

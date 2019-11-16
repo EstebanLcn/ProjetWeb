@@ -17,7 +17,7 @@ require_once '_header.php';
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
     <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
-
+    <link rel="icon" href="../images/bde.png" />
     <title>Panier</title>
 
     <link rel="icon" href="./image/blacktree.png" />

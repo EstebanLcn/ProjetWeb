@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/project.css" />
   <link rel="stylesheet" href="css/pageL.css" />
   <link rel="stylesheet" href="css/home.css" />
-
+  <link rel="icon" href="images/bde.png" />
   <title>Home</title>
 </head>
 
