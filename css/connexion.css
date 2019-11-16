@@ -8,41 +8,28 @@
     }
 }
 
-#container {
+.container {
     height: 100%;
-    width: 100%;
+    align-content: center;
 }
 
-body {
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-color: #f2f2f2;
-    background-repeat: no-repeat;
-    font-family: arial;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 100%;
+.card {
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-/*@media screen and (min-width: 1000px) .contenu {
-    bottom: 0;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 33em;
-    z-index: 1;
-}*/
-
-.contenu {
-    background: #f2f2f2 none repeat scroll 0 0;
-    text-align: center;
+.card-header h3 {
+    color: white;
 }
 
 .cent {
-    margin-right: 8%;
+    color: white;
+}
+
+#titre {
+    text-align: center;
+    color: white;
 }

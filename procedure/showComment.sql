@@ -12,8 +12,8 @@ BEGIN
 START TRANSACTION;
 
 SELECT *
-FROM Comment
+FROM _comment
 WHERE id__Event = input_id_event;
 
 COMMIT;
-END$$
+END

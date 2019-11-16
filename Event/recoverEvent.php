@@ -3,9 +3,10 @@
   session_start();
 }*/
 require 'dbh.php';
-$DB=new DB();
+$DB = new DB();
 
 $query = $DB->db->prepare('CALL showEvent()');
+
   $query->execute();
   $events = $query->fetchAll();  
 
@@ -38,10 +39,3 @@ $query = $DB->db->prepare('CALL showEvent()');
                     ?>
                     <p> <?= $comment['texte'] ?></p>
                 <?php endforeach; ?>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</div>
-   <?php endforeach;  ?>  
