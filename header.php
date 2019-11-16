@@ -26,7 +26,6 @@
             }
             ?>
         </div>
-        <a href="#">Se connecter</a>
         </div>
         </div>
     </header>
