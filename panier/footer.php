@@ -19,7 +19,6 @@
             $(".hamburger").on("click", function() {
                 $("nav ul").toggleClass("menu");
             });
-
         });
     </script>
 </div>
