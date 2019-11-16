@@ -140,11 +140,13 @@ nav ul li a:hover {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    background-color: transparent;
 }
 
 .ho a:hover {
     text-decoration: underline;
     color: #fff;
+    background-color: transparent;
 }
 
 .hi a {
