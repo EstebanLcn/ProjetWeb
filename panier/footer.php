@@ -14,4 +14,12 @@
     </ul>
     <script src="assets/vendors/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="JS/app.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".hamburger").on("click", function() {
+                $("nav ul").toggleClass("menu");
+            });
+
+        });
+    </script>
 </div>
