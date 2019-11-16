@@ -50,6 +50,16 @@
                         </span></li>
                     <li> <input type="search" id="search" name="search" placeholder="Recherche..." autocomplete="on" />
                     </li>
+                    <?php
+                    if (isset($_SESSION['user_name'])) {
+                        echo '<div class="ho"> <h5><a href="../connexion/profil.php">' . $_SESSION['user_name']  . '</a> |  <a href="../connexion/deconnexion.php">Deconnexion</a></h5></div>';
+                    } else {
+                        echo '
+                <div class="lienHeader">
+                <div class="ho"> <a href="../connexion/mention.php"> S\'inscrire</a>  |  <a href="../connexion/connexion.php?var=">Se connecter</a>
+                </div>';
+                    }
+                    ?>
                 </ul>
             </div>
         </nav>
