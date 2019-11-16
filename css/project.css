@@ -19,3 +19,25 @@ a:hover {
   width: 65px;
   height: 65px;
 }
+
+.high a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.high a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.ho a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.ho a:hover {
+  text-decoration: underline;
+  color: #fff;
+  background-color: transparent;
+}

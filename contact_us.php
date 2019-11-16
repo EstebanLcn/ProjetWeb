@@ -26,9 +26,9 @@
 
     <!-- Optional: some overlay text to describe the video -->
     <div class="content">
-      <h1>Comment nous joindre ?</h1>
-      <p>Adresse mail : bdecesi33@gmail.com</p>
-      <p>Numéro de téléphone : 118 218</p>
+      <h1 class='text'>Comment nous joindre ?</h1>
+      <p class='text'>Adresse mail : bdecesi33@gmail.com</p>
+      <p class='text'>Numéro de téléphone : 118 218</p>
       <!-- Use a button to pause/play the video with JavaScript -->
       <button id="myBtn" onclick="myFunction()">Pause</button>
     </div>

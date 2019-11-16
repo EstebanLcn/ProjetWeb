@@ -3,7 +3,7 @@ include_once 'menu.php';
 require_once '_header.php';
 
 
-if (isset($_POST['check'])) {
+if (isset($_POST['check']) && isset($_SESSION['user_name'])) {
     switch ($_POST['paiement']) {
         case 'paiement':
             echo "la commande a bien été effectuée";
@@ -29,6 +29,13 @@ if (isset($_POST['check'])) {
             echo "Erreur avec la commande";
             break;
     }
+} elseif (!isset($_SESSION['user_name']) && isset($_POST['check'])) {
+    echo "<script>alert(\" Veuillez vous connecter \")</script>";
+    echo '
+    <div class="lienHeader">
+    <div class="hi"> <a href="../connexion/mention.php"> S\'inscrire</a>  |  <a href="../connexion/connexion.php?var=">Se connecter</a>
+    </div>';
+    echo "<a href='../connex.php'>retourner au panier</a>";
 } else {
     echo "<script>alert(\" Veuillez acceptez les conditions de ventes ! \")</script>";
     echo "<a href='panier.php'>retourner au panier</a>";
