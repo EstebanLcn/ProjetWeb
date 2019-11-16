@@ -28,7 +28,6 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
   <header>
   </header>
   <?php
-
   //affiche tous les events, remplis avec les données de l'évènement
   foreach ($events as $event) :
     ?>
@@ -37,21 +36,24 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
         <?php echo "<img src='../images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
         <div class="card-body">
           <p class="card-text"> <?= $event['name'] ?> </p>
-          <div class="d-flex justify-content-between align-items-center" \>
+          <div class="d-flex justify-content-between align-items-center">
             <div class="btn-group">
               <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
               <form method="get" action="addComment.php">
-                <input type="hidden" name="id_event" value='<?= $event['id'] ?>'>
+                <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
                 <input type="hidden" name="id_user" value='1'>
                 <input type="text" name="content">
               </form>
               <?php
+
                 //récupère tous les commentaires
                 $query = $DB->db->prepare('CALL showComment(:_id_event)');
                 $query->bindValue(':_id_event', $event['id'], PDO::PARAM_STR);
                 $query->execute();
                 $comments = $query->fetchAll();
-                //affiche le contenu des commentaires    
+                //affiche le contenu des commentaires 
+                var_dump($comments);
+
                 foreach ($comments as $comment) :
                   ?>
                 <p> <?= $comment['texte'] ?></p>
