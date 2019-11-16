@@ -13,7 +13,9 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
 
 <body>
     <?php
-    session_start();
+    if (!isset($_SESSION)) {
+        session_start();
+    }
 
     $test = (array) $_SESSION['transfert'];
     $requete = $bdd->prepare('SELECT * FROM `_user` WHERE `email` = :test');

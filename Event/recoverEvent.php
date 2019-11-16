@@ -7,8 +7,8 @@ $DB = new DB();
 
 $query = $DB->db->prepare('CALL showEvent()');
 $query->execute();
-$events = $query->fetchAll(); ?>
-
+$events = $query->fetchAll();
+?>
 <!DOCTYPE html>
 <?php
 $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', '');
@@ -26,7 +26,6 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
 
 <body>
   <header>
-    <?php include('../header.php'); ?>
   </header>
   <?php
 
@@ -35,7 +34,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
     ?>
     <div class="col-md-6 ">
       <div class="card mb-4 shadow-sm">
-        <?php echo "<img src='../images/" . $event['id'] . "' class='card-img-top' alt='Image'> "; ?>
+        <?php echo "<img src='../images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
         <div class="card-body">
           <p class="card-text"> <?= $event['name'] ?> </p>
           <div class="d-flex justify-content-between align-items-center" \>
@@ -52,7 +51,6 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
                 $query->bindValue(':_id_event', $event['id'], PDO::PARAM_STR);
                 $query->execute();
                 $comments = $query->fetchAll();
-
                 //affiche le contenu des commentaires    
                 foreach ($comments as $comment) :
                   ?>
