@@ -58,7 +58,7 @@
             <img src="images/jeu.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Association jeux de sociétés</h5>
-              <p class="card-text">Le "Ou est Thomas" et le jeu des 7 différences font de cette association une des meilleures.</p>
+              <p class="card-text">Le "Où est Thomas" et le jeu des 7 différences font de cette association une des meilleures.</p>
               <a href="description12.php" class="btn btn-warning">Description</a>
               <a href="formulaireInscription.php" class="btn btn-warning">Inscription</a>
 
@@ -83,14 +83,7 @@
       <footer class="jean">
 
 
-
-        <<<<<<< HEAD <a href="mentions_legales.php">Mentions légales</a>
-          =======
-          <a href="#">Mentions légales</a>
-          >>>>>>> principale
-          <a href="#">Contactez-nous</a>
-          <a href="#">Menu</a>
-          <a href="#">@Home</a>
+        <?php include 'footer.php' ?>
 
       </footer>
 

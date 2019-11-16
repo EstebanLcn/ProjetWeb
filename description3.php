@@ -30,10 +30,7 @@
 
 
 
-        <a href="mentions_legales.php">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
+        <?php include 'footer.php' ?>
 
     </footer>
     <?php

@@ -11,10 +11,10 @@
 <body>
     <header>
         <div class="high">
-            <img class="icon" src="images/bde.png" alt="logo_bde">
+            <a href="home.php"> <img class="icon" src="images/bde.png" alt="logo_bde"></a>
 
             <h1 class="hey">BDE Cesi Bordeaux</h1>
-            <div class="ho"> <a href="#">S'inscrire</a>
+            <div class="ho"> <a href="formulaireInscription.php">S'inscrire</a>
 
                 <a href="#">Se connecter</a>
             </div>

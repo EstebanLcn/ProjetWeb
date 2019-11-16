@@ -23,7 +23,7 @@
         <div class="prg">
             <p>La musculation est un ensemble d'exercices physiques visant le développement des muscles squelettiques, afin d'acquérir plus de force, d'endurance, de puissance, d'explosivité ou de volume musculaire. Dans ces exercices, une force (par exemple la gravité, avec l'utilisation des haltères ou du poids du corps) est opposée de manière répétitive à la force générée par la contraction des muscles. Cette activité est généralement pratiquée dans une salle de sport.
 
-Ses bienfaits sont importants, tout d'abord physiquement car on améliore sa silhouette, mais aussi mentalement. Elle permet également d'améliorer sa santé, la circulation du sang, de lutter contre le mal de dos, contre le vieillissement, ainsi que de se sentir plus confiant.</p>
+                Ses bienfaits sont importants, tout d'abord physiquement car on améliore sa silhouette, mais aussi mentalement. Elle permet également d'améliorer sa santé, la circulation du sang, de lutter contre le mal de dos, contre le vieillissement, ainsi que de se sentir plus confiant.</p>
         </div>
     </div>
     <a href="formulaireInscription.php" class="Link_inscription">S'inscrire</a>
@@ -31,11 +31,8 @@ Ses bienfaits sont importants, tout d'abord physiquement car on améliore sa sil
     <footer class="jean">
 
 
+        <?php include 'footer.php' ?>
 
-        <a href="mentions_legales.php">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
 
     </footer>
     <?php

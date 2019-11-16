@@ -1,16 +1,17 @@
+<?php include 'header.php' ?>
 <strong>La seule contrepartie à l'utilisation de ces mentions légales, est l'engagement total à laisser le lien crédit subdelirium sur cette page de mentions légales.</strong><br />
 Vos mentions légales :
 <h2>Informations légales</h2>
 <h3>1. Présentation du site.</h3>
 <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site <a href="http://BDE Bordeaux/">BDE Bordeaux</a> l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi :</p>
 <p><strong>Propriétaire</strong> : Leo Chazeaux – Etudiant – Place de la Victoire, 33000 Bordeaux<br />
-<strong>Créateur</strong>  : <a href="http://localhost/projet_web/index.php">Leo Chazeaux</a><br />
-<strong>Responsable publication</strong> : Arthur Valadier – bdecesibordeaux33@gmail.com<br />
-Le responsable publication est une personne physique ou une personne morale.<br />
-<strong>Webmaster</strong> : Thomas Rapin – testwampmaiol@gmail.com<br />
-<strong>Hébergeur</strong> : WampServer – localhost<br />
-Crédits : Esteban Lecuona, Arthur Valadier, Thomas Rapin, Thibaut Rapin<br />
-Le modèle de mentions légales est offert par Subdelirium.com <a target="_blank" href="https://www.subdelirium.com/generateur-de-mentions-legales/">Mentions légales</a></p>
+  <strong>Créateur</strong> : <a href="http://localhost/projet_web/index.php">Leo Chazeaux</a><br />
+  <strong>Responsable publication</strong> : Arthur Valadier – bdecesibordeaux33@gmail.com<br />
+  Le responsable publication est une personne physique ou une personne morale.<br />
+  <strong>Webmaster</strong> : Thomas Rapin – testwampmaiol@gmail.com<br />
+  <strong>Hébergeur</strong> : WampServer – localhost<br />
+  Crédits : Esteban Lecuona, Arthur Valadier, Thomas Rapin, Thibaut Rapin<br />
+  Le modèle de mentions légales est offert par Subdelirium.com <a target="_blank" href="https://www.subdelirium.com/generateur-de-mentions-legales/">Mentions légales</a></p>
 
 <h3>2. Conditions générales d’utilisation du site et des services proposés.</h3>
 <p>L’utilisation du site <a href="http://BDE Bordeaux/">BDE Bordeaux</a> implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site <a href="http://BDE Bordeaux/">BDE Bordeaux</a> sont donc invités à les consulter de manière régulière.</p>
@@ -45,9 +46,9 @@ Le modèle de mentions légales est offert par Subdelirium.com <a target="_blank
 <p>Le refus d’installation d’un cookie peut entraîner l’impossibilité d’accéder à certains services. L’utilisateur peut toutefois configurer son ordinateur de la manière suivante, pour refuser l’installation des cookies :</p>
 <p>Sous Internet Explorer : onglet outil (pictogramme en forme de rouage en haut a droite) / options internet. Cliquez sur Confidentialité et choisissez Bloquer tous les cookies. Validez sur Ok.</p>
 <p>Sous Firefox : en haut de la fenêtre du navigateur, cliquez sur le bouton Firefox, puis aller dans l'onglet Options. Cliquer sur l'onglet Vie privée.
-  Paramétrez les Règles de conservation sur :  utiliser les paramètres personnalisés pour l'historique. Enfin décochez-la pour  désactiver les cookies.</p>
+  Paramétrez les Règles de conservation sur : utiliser les paramètres personnalisés pour l'historique. Enfin décochez-la pour désactiver les cookies.</p>
 <p>Sous Safari : Cliquez en haut à droite du navigateur sur le pictogramme de menu (symbolisé par un rouage). Sélectionnez Paramètres. Cliquez sur Afficher les paramètres avancés. Dans la section "Confidentialité", cliquez sur Paramètres de contenu. Dans la section "Cookies", vous pouvez bloquer les cookies.</p>
-<p>Sous Chrome : Cliquez en haut à droite du navigateur sur le pictogramme de menu (symbolisé par trois lignes horizontales). Sélectionnez Paramètres. Cliquez sur Afficher les paramètres avancés. Dans la section "Confidentialité", cliquez sur préférences.  Dans l'onglet "Confidentialité", vous pouvez bloquer les cookies.</p>
+<p>Sous Chrome : Cliquez en haut à droite du navigateur sur le pictogramme de menu (symbolisé par trois lignes horizontales). Sélectionnez Paramètres. Cliquez sur Afficher les paramètres avancés. Dans la section "Confidentialité", cliquez sur préférences. Dans l'onglet "Confidentialité", vous pouvez bloquer les cookies.</p>
 
 <h3>9. Droit applicable et attribution de juridiction.</h3>
 <p>Tout litige en relation avec l’utilisation du site <a href="http://BDE Bordeaux/">BDE Bordeaux</a> est soumis au droit français. Il est fait attribution exclusive de juridiction aux tribunaux compétents de Paris.</p>
@@ -57,3 +58,4 @@ Le modèle de mentions légales est offert par Subdelirium.com <a target="_blank
 <h3>11. Lexique.</h3>
 <p>Utilisateur : Internaute se connectant, utilisant le site susnommé.</p>
 <p>Informations personnelles : « les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
+<?php include 'footer.php' ?>
