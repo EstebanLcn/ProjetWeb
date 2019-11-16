@@ -14,10 +14,20 @@
             <a href="home.php"> <img class="icon" src="images/bde.png" alt="logo_bde"></a>
 
             <h1 class="hey">BDE Cesi Bordeaux</h1>
-            <div class="ho"> <a href="formulaireInscription.php">S'inscrire</a>
-
-                <a href="#">Se connecter</a>
-            </div>
+            <?php
+            session_start();
+            if (isset($_SESSION['user_name'])) {
+                echo '<div> <h5><a href="connexion/profil.php">' . $_SESSION['user_name']  . '</a> |  <a href="connexion/deconnexion.php">Deconnexion</a></h5></div>';
+            } else {
+                echo '
+                <div >
+                <div> <a href="connexion/mention.php"> S\'inscrire</a>  |  <a href="connexion/connexion.php?var=">Se connecter</a>
+                </div>';
+            }
+            ?>
+        </div>
+        <a href="#">Se connecter</a>
+        </div>
         </div>
     </header>
 
