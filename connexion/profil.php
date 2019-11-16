@@ -51,13 +51,15 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
     echo ('<br> l\'adresse mail : ' . $data['email']);
     echo (' <br> le role est : ' . $data['id_Role']);
     echo (' <br> la localisation est : ' . $data['id_Localisation']);
+    echo ('<br><img src=../' . $data['profile_picture'] . '>');
 
     $objet = (object) [
         "email" => $data['email'],
         "passwordd" => $data['password'],
         "role" => $data['id_Role'],
         "localisation" => $data['id_Localisation'],
-        "id" => $data['id']
+        "id" => $data['id'],
+        "profile_picture" => $data['profile_picture']
     ];
     $_SESSION['transfert_all'] = $objet; ?>
 
