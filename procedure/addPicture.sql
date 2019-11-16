@@ -12,12 +12,15 @@ CREATE PROCEDURE addPicture (
 BEGIN
 
 START TRANSACTION;
-DELETE picture
+INSERT INTO picture
     (
     url,
     id__Event
     )
-
+VALUES(
+        input_url,
+        input_event_id
+    );
 COMMIT;
 
 END
