@@ -39,3 +39,7 @@ $query = $DB->db->prepare('CALL showEvent()');
                     ?>
                     <p> <?= $comment['texte'] ?></p>
                 <?php endforeach; ?>
+        </div>
+      </div>
+    </div>
+  <?php endforeach;  ?>
