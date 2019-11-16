@@ -23,11 +23,11 @@
         <div class="prg">
             <p>L'esport, aussi orthographié e-sport ou eSport (pour electronic sports, orthographié esports) et parfois traduit par sport électronique, désigne la pratique sur Internet ou en LAN-party d'un jeu vidéo seul ou en équipe, par le biais d'un ordinateur ou d'une console de jeux vidéo.
 
-L'essor du sport électronique commence à la fin des années 1980 avec les premiers jeux en réseau multijoueurs et sur internet ; les meilleurs acteurs mondiaux du sport électronique se rencontrent lors de tournois tels que l'Esports World Convention (ESWC), la Major League Gaming (MLG), la Cyberathlete Professional League (CPL) ou encore l'Evolution Championship Series (EVO).
+                L'essor du sport électronique commence à la fin des années 1980 avec les premiers jeux en réseau multijoueurs et sur internet ; les meilleurs acteurs mondiaux du sport électronique se rencontrent lors de tournois tels que l'Esports World Convention (ESWC), la Major League Gaming (MLG), la Cyberathlete Professional League (CPL) ou encore l'Evolution Championship Series (EVO).
 
-Le sport électronique à haut niveau est souvent financé par les sponsors et par les revenus générés par la diffusion en streaming.
+                Le sport électronique à haut niveau est souvent financé par les sponsors et par les revenus générés par la diffusion en streaming.
 
-</p>
+            </p>
         </div>
     </div>
     <a href="formulaireInscription.php" class="Link_inscription">S'inscrire</a>
@@ -36,10 +36,7 @@ Le sport électronique à haut niveau est souvent financé par les sponsors et p
 
 
 
-        <a href="mentions_legales.php">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
+        <?php include 'footer.php' ?>
 
     </footer>
     <?php

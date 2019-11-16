@@ -23,24 +23,20 @@
         <div class="prg">
             <p>Un combat est une lutte, un violent conflit entre deux ou plusieurs personnes (ou bien entre deux ou plusieurs organisations). L'objectif est généralement d'établir une domination sur la partie opposée.
 
-Ce terme fait référence aux conflits armés entre des forces militaires pendant une guerre. Il peut également désigner un duel entre deux personnes, comme un combat de catch.
+                Ce terme fait référence aux conflits armés entre des forces militaires pendant une guerre. Il peut également désigner un duel entre deux personnes, comme un combat de catch.
 
-De nombreuses civilisations ont élevé des animaux afin de les faire combattre ; ces combats d'animaux sont souvent sources de paris.
+                De nombreuses civilisations ont élevé des animaux afin de les faire combattre ; ces combats d'animaux sont souvent sources de paris.
 
-En religion, le combat spirituel est une lutte interne sur le plan personnel.
-</p>
+                En religion, le combat spirituel est une lutte interne sur le plan personnel.
+            </p>
         </div>
     </div>
     <a href="formulaireInscription.php" class="Link_inscription">S'inscrire</a>
     <a href="pageLambda.php" class="Link_inscription">Retour à l'acceuil</a>
     <footer class="jean">
 
+        <?php include 'footer.php' ?>
 
-
-        <a href="mentions_legales.php">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
 
     </footer>
     <?php

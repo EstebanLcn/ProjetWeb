@@ -22,7 +22,7 @@
         <img src="images/jeu.png" class="images" alt="...">
         <div class="prg">
             <p>Le jeu de société est un jeu qui se pratique à plusieurs personnes, par opposition aux jeux qui se pratiquent seul, les jeux solitaires ou casse-tête.
-</p>
+            </p>
         </div>
     </div>
     <a href="formulaireInscription.php" class="Link_inscription">S'inscrire</a>
@@ -31,10 +31,7 @@
 
 
 
-        <a href="mentions_legales.php">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
+        <?php include 'footer.php' ?>
 
     </footer>
     <?php

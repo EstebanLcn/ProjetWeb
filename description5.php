@@ -23,7 +23,7 @@
         <div class="prg">
             <p>Le surf (abréviation française de l'anglais surf-riding, où riding signifie « chevaucher » et surf « (vagues) déferlantes ») est un sport qui consiste à glisser sur les vagues, ondes de surface, au bord de l'océan, debout sur une planche. Le surf se pratique sur des sites de surf, appelés spots (« bons coins »), plages qui sont baignées par des vagues plus ou moins grandes et propices à la glisse.
 
-Les adeptes de ce sport sont les surfeurs ou aquaplanchistes</p>
+                Les adeptes de ce sport sont les surfeurs ou aquaplanchistes</p>
         </div>
     </div>
     <a href="formulaireInscription.php" class="Link_inscription">S'inscrire</a>
@@ -32,10 +32,7 @@ Les adeptes de ce sport sont les surfeurs ou aquaplanchistes</p>
 
 
 
-        <a href="mentions_legales.php">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
+        <?php include 'footer.php' ?>
 
     </footer>
     <?php

@@ -23,11 +23,11 @@
         <div class="prg">
             <p>Le terme d’éloquence renvoie à deux significations principales :
 
-L'art de bien parler, l'aptitude à s'exprimer avec aisance, la capacité d'émouvoir, de persuader ;
-Le caractère de ce qui — sans paroles — est expressif, significatif, probant : comme dans l'expression « l'éloquence des chiffres ».
-Cicéron est considéré comme un grand orateur de l'Antiquité. Le père Louis Bourdaloue est considéré comme l'un des fondateurs de l'éloquence française.
+                L'art de bien parler, l'aptitude à s'exprimer avec aisance, la capacité d'émouvoir, de persuader ;
+                Le caractère de ce qui — sans paroles — est expressif, significatif, probant : comme dans l'expression « l'éloquence des chiffres ».
+                Cicéron est considéré comme un grand orateur de l'Antiquité. Le père Louis Bourdaloue est considéré comme l'un des fondateurs de l'éloquence française.
 
-</p>
+            </p>
         </div>
     </div>
     <a href="formulaireInscription.php" class="Link_inscription">S'inscrire</a>
@@ -35,11 +35,7 @@ Cicéron est considéré comme un grand orateur de l'Antiquité. Le père Louis 
     <footer class="jean">
 
 
-
-        <a href="mentions_legales.php">Mentions légales</a>
-        <a href="#">Contactez-nous</a>
-        <a href="#">Menu</a>
-        <a href="#">@Home</a>
+        <?php include 'footer.php' ?>
 
     </footer>
     <?php
