@@ -17,8 +17,8 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
     session_start();
 
     $test = (array) $_SESSION['transfert'];
-    $requete = $bdd->prepare('SELECT * FROM `_user` WHERE `email` = \'thibaud@gmail.com\'');
-    $requete->bindValue(':test', '$test', PDO::PARAM_STR);
+    $requete = $bdd->prepare('SELECT * FROM `_user` WHERE `email` = :test');
+    $requete->bindValue(':test', $test['email'], PDO::PARAM_STR);
     $requete->execute();
     $data = $requete->fetch();
     $requete->closeCursor();
@@ -56,7 +56,8 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
         "email" => $data['email'],
         "passwordd" => $data['password'],
         "role" => $data['id_Role'],
-        "localisation" => $data['id_Localisation']
+        "localisation" => $data['id_Localisation'],
+        "id" => $data['id']
     ];
     $_SESSION['transfert_all'] = $objet; ?>
 
@@ -68,7 +69,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
                     <a href="#" class="card-link">Another link</a>
                 </div>
             </div>
-            ?>
+
 </body>
 
 </html>
