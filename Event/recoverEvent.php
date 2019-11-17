@@ -31,7 +31,7 @@ $query = $DB->db->prepare('CALL showEvent()');
                     <?php
 //récupère tous les commentaires
                       $query = $DB->db->prepare('CALL showComment(:_id_event)');
-                      $query->bindValue(':_id_event', $event['id'], PDO::PARAM_STR);
+                      $query->bindValue(':_id_event', $event['id__Event'], PDO::PARAM_STR);
                       $query->execute();
                       $comments = $query->fetchAll();
  //affiche le contenu des commentaires    
