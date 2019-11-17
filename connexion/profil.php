@@ -26,14 +26,8 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
             <div class="inscription">
                 <?php
                 session_start();
-                if (isset($_SESSION['user_name'])) {
-                    echo '<div> <h5><a href="connexion/profil.php">' . $_SESSION['user_name']  . '</a> |  <a href="connexion/deconnexion.php">Deconnexion</a></h5></div>';
-                } else {
-                    echo '
-                <div >
-                <div> <a href="connexion/mention.php"> S\'inscrire</a>  |  <a href="connexion/connexion.php?var=">Se connecter</a>
-                </div>';
-                }
+                echo '<div><a href="deconnexion.php">Deconnexion</a></h5></div>';
+
                 ?>
             </div>
         </div>
