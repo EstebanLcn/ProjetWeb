@@ -8,6 +8,7 @@ echo $_GET['title']."|";
 echo $_GET['content']."|";
 echo $_GET['price']."|";
 echo $_GET['url']."|";
+// récupération de tous les évènements
 
 $query = $DB->db->prepare('CALL addOccurrenceEvent(:_title,:_content,:_price,:_url)');
   $query->bindValue(':_title', $_GET['title'], PDO::PARAM_STR);
@@ -18,4 +19,3 @@ $query = $DB->db->prepare('CALL addOccurrenceEvent(:_title,:_content,:_price,:_u
   echo $query->execute();
 
   header('location: recoverEvent.php');
-?>

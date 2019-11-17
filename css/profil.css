@@ -1,0 +1,11 @@
+.inscription {
+    display: inline-block;
+    margin-left: 20%;
+}
+
+.cent {
+    display: block;
+    margin: auto;
+    margin-top: 25em;
+    width: 25%;
+}

@@ -1,11 +1,14 @@
-@media screen and (min-width: 1000px) {
-    body {
-        background-image: url('../images/main.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100%;
-        font-family: 'Numans', sans-serif;
-    }
+body {
+    background-image: url('../images/main.jpg');
+    /* on met une image de fond qui ce trouve dans le dossier image*/
+    background-size: cover;
+    /* on spécifie la taille de l'image en arrière plans*/
+    background-repeat: no-repeat;
+    /* On évite que l'image soit répéter*/
+    height: 100em;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    width: 100%;
 }
 
 .container {
@@ -14,11 +17,13 @@
 }
 
 .card {
+    /*On modifie l'aspect de notre card*/
     height: 370px;
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
     background-color: rgba(0, 0, 0, 0.5) !important;
+    /*On rend la couleur de fond de notre card noir Stransparente */
 }
 
 .card-header h3 {
