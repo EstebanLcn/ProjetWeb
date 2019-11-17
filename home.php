@@ -66,7 +66,7 @@
       </div>
       <?php
       if (isset($_SESSION['user_name'])) {
-        echo ('<a class="linkz" href="Event/recoverEvent.php">Rejoignez la soirée</a>');
+        echo ('<a class="linkz" href="recoverEvent.php">Rejoignez la soirée</a>');
       } else {
         echo ('<p>Vous devez etre connecter pour voir les évènement</p>');
       }
@@ -138,7 +138,7 @@
           <div class="card-body">
             <?php
             if (isset($_SESSION['user_name'])) {
-              echo ('<a class="linkz" href="Event/recoverEvent.php">Evenement</a>');
+              echo ('<a class="linkz" href="recoverEvent.php">Evenement</a>');
             } else {
               echo ('<p>Vous devez etre connecter pour voir les évènement</p>');
             }

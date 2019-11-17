@@ -30,20 +30,20 @@ require_once '_header.php';
                 <thead>
                     <tr>
                         <th>
-                            <span class="name">Article picture</span>
+                            <span class="name">Article</span>
 
                         </th>
                         <th>
-                            <span class="name">Product Name</span>
+                            <span class="name">Nom du produit</span>
                         </th>
                         <th>
                             <span class="price">Price</span>
                         </th>
                         <th>
-                            <span class="quantity">Quantity</span>
+                            <span class="quantity">Quantité</span>
                         </th>
                         <th>
-                            <span class="subtotal">Subtotal</span>
+                            <span class="subtotal">total</span>
                         </th>
                         <th>
                             <span class="action">Actions</span>

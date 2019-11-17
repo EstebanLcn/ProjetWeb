@@ -55,7 +55,7 @@
         </section>
         <div class=element>
             <aside>
-                BEST PRODUCTS : <br>
+                TOP Produits : <br>
                 <?php include("bestProducts.php"); ?>
                 <br>
             </aside>

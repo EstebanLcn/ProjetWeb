@@ -1,9 +1,7 @@
-.bigEvent{
- display: flex;
 
 
-}
+.bigEvent {
+    display: flex;
+    justify-content: center;
 
-.card-body{
-    margin-left: 15%;
 }

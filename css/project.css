@@ -10,7 +10,7 @@
   margin-right: 2%;
 }
 
-a:hover {
+.ghigh ul li a:hover {
   background-color: hsla(39, 100%, 66%, 1);
 }
 
