@@ -9,7 +9,6 @@ $query = $DB->db->prepare('CALL showEvent()');
 
 $query->execute();
 $events = $query->fetchAll();
-include('../header.php');
 
 //affiche tous les events, remplis avec les données de l'évènement
 
