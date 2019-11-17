@@ -23,8 +23,9 @@ foreach ($events as $event) :
         <?php echo "<img src='images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
         <div>
           <?php
-            $test = (array) $_SESSION['transfert_all'];
-            var_dump($test['role']);
+            session_start();
+            $test = array($_SESSION['transfert_all']);
+            var_dump($test);
             if (($test['role']) == "personnel CESI") {
               echo ('<form class="myform" methode="get" action="delete.php">
                 <button name="delete" type="delete" value="delete">
