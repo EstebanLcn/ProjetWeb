@@ -76,7 +76,7 @@
         <p>Le BDE est une organisation à but non lucratif qui vise à promouvoir la vie associative du Cesi Bordeaux en donnant une impulsion aux projets et envies des étudiants. Nous avons pu par exemple organiser un gala, un week-end ski sans compter les nombreuses soirées actives que nous pratiquons en réservant bars, boites.</p>
         <p>La vie associative est fondamentale au BDE et nous offrons un large panel de découverte au fil de l'année.</p>
         <p>Nous vivons grâce à nos nombreuses actions (pull, photo de classe mais aussi ventes de gâteaux) mais nous sommes toujours à la recherche de nouveaux éléments puisque chaque année la promotion suivante prends les rennes.</p>
-        <a class="linkz" href="#">Alors prenez les devants</a>
+        <a class="linkz" href="FormulaireInscription.php">Alors prenez les devants</a>
 
       </div>
       <h3>Les dirigeants du BDE</h3>
@@ -158,8 +158,7 @@
           </div>
         </div>
       </div>
-      <button type="button" class="btn btn-dark fin">Rejoignez-nous</button>
-
+      <a href="formulaireInscription"> <button type="button" class="btn btn-dark fin">Rejoignez-nous</button></a>
     </div>
   </div>
   <footer class="jean">

@@ -43,11 +43,19 @@ foreach ($events as $event) :
         <p class="card-text"> <?= $event['name'] ?> </p>
         <div class="d-flex justify-content-between align-items-center" \>
           <div class="btn-group">
+
             <form class="myform" methode="get" action="participate.php">
 
               <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
               <input name="participer" type="submit" value="Participer">
               <input name="participate" type="hidden" value="<?php echo $_SESSION['user_name'] ?>">
+
+            </form>
+
+            <form method="get" action="addcsv.php">
+
+            <input name="export to csv" type="submit" value="export">
+
             </form>
 
             <form method="get" action="addComment.php">
