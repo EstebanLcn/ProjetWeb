@@ -15,7 +15,7 @@ foreach ($products as $product) :
             <h3><?php $product->description ?></h3>
 
             <div class='price'> <?= number_format($product->price, 2, ',', ' ') ?> € </div>
-            <a href="addpanier.php?id=<?= $product->id; ?>" class='add addPanier'> add to cart</a>
+            <a href="addpanier.php?id=<?= $product->id; ?>" class='add addPanier'>Ajouter au panier</a>
         </div>
     </div>
 
