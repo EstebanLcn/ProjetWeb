@@ -1,8 +1,12 @@
 <?php
-/*if(!isset($_SESSION)){
-  session_start();
-}*/
 require 'dbh.php';
+require 'connexion/connectionhelp.php';
+
+if (!isset($_SESSION)) {
+  session_start(); //on vérifie si session star n'a pas deja était , si ce n'est pas le cas on en fait une 
+}
+
+
 $DB = new DB();
 
 $query = $DB->db->prepare('CALL showEvent()');
@@ -10,22 +14,21 @@ $query = $DB->db->prepare('CALL showEvent()');
 $query->execute();
 $events = $query->fetchAll();
 include('header.php');
-
 //affiche tous les events, remplis avec les données de l'évènement
-
 foreach ($events as $event) :
 
   ?>
   <div class="bigEvent">
-
+    <link rel="stylesheet" href="css/recoverEvent.css" />
     <div class="col-md-6 ">
       <div class="card mb-4 shadow-sm">
         <?php echo "<img src='images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
         <div>
           <?php
+
             $test = (array) $_SESSION['transfert_all'];
-            var_dump($test['role']);
-            if (($test['role']) == "personnel CESI") {
+            if (($test['role']) == "membre du BDE") {
+
               echo ('<form class="myform" methode="get" action="delete.php">
                 <button name="delete" type="delete" value="delete">
                   DELETE PUBLICATION
@@ -87,8 +90,8 @@ foreach ($events as $event) :
                     echo ('<form class="myform" methode="get" action="delete.php">
                 <button name="delete" type="delete" value="delete">
                   DELETE PUBLICATION
-                  <input type="hidden" name="id_event" value=' . $event[' id__Event'] . '>
-                  <input type="hidden" name="id_comment" value=' . $comment[' id'] . '>
+                  <input type="hidden" name="id_event" value=' . $event['id__Event'] . '>
+                  <input type="hidden" name="id_comment" value=' . $comment['id'] . '>
               </form>');
                   } else {
                     echo ('');
