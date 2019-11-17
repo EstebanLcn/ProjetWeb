@@ -9,12 +9,15 @@ $query = $DB->db->prepare('CALL showEvent()');
 
 $query->execute();
 $events = $query->fetchAll();
-include('../header.php');
+include('header.php');
 
 //affiche tous les events, remplis avec les données de l'évènement
 
 foreach ($events as $event) :
+ 
   ?>
+  <div class="bigEvent">
+
   <div class="col-md-6 ">
     <div class="card mb-4 shadow-sm">
       <?php echo "<img src='../images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
@@ -74,5 +77,8 @@ foreach ($events as $event) :
               
             <?php endforeach; ?>
           
+      </div>
+      </div>
+      </div>
       </div>
     <?php endforeach;  ?>
