@@ -12,8 +12,7 @@ $events = $query->fetchAll();
 include('../header.php');
 
 //affiche tous les events, remplis avec les données de l'évènement
-var_dump($events);
-var_dump($_SESSION);
+
 
 foreach ($events as $event) :
   ?>
@@ -27,8 +26,9 @@ foreach ($events as $event) :
             <form class="myform" methode="get" action="participate.php">
 
               <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
+              <input name="participer" type="submit" value="Participer">
 
-              <input name="participate" type="submit" value="<?php echo $_SESSION['user_name'] ?>">
+              <input name="participate" type="hidden" value="<?php echo $_SESSION['user_name'] ?>">
             </form>
 
             <form method="get" action="addComment.php">
