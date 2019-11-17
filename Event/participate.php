@@ -4,7 +4,7 @@ session_start();
 
 $DB = new DB();
 
-
+//récupération de l'id User
 $id_user = $DB->db->prepare('SELECT id FROM _user WHERE first_name=:_participate');
 $id_user->bindValue(':_participate', $_GET['participate'], PDO::PARAM_STR);
 $id_user->execute();
@@ -24,6 +24,7 @@ $query->bindValue(':_participate', $_GET['participate'], PDO::PARAM_STR);
 
 $query->execute();
 */
+// on vérifie si l'ID USER de la table participate est le même que l'ID de la personne connectée auquel cas l'utilisateur est déjà inscrit
 
 for ($i = 0; $i < count($user); $i++) {
     if ($user[$i]['id__User'] == $id[0]['id']) {
@@ -38,6 +39,7 @@ for ($i = 0; $i < count($user); $i++) {
         $test = 1;
     }
 }
+//si jamais l'utilisateur n'est pas inscrit, alors on l'inscrit
 if ($test == 1) {
     $query = $DB->db->prepare('INSERT INTO participate VALUES(:_id_event,(SELECT id FROM _user WHERE first_name=:_participate))');
     $query->bindValue(':_id_event', $_GET['id_event'], PDO::PARAM_STR);

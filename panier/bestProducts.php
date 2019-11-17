@@ -4,7 +4,7 @@ $products = $DB->query('SELECT * FROM store
 INNER JOIN article ON article.id = store.id
 ORDER BY quantity DESC LIMIT 3');
 
-
+//permet l'affichage des 3 produits les plus commandés
 
 foreach ($products as $product) :
     ?>

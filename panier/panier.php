@@ -1,7 +1,7 @@
 <?php
 include_once 'menu.php';
 require_once '_header.php';
-
+// pareil que pour la boutique, cependant on va récupérer les id des produits mis en panier
 ?>
 <!doctype html>
 <html lang="fr">

@@ -21,7 +21,10 @@
 
 <body>
     <header>
-        <?php include("menu.php") ?>
+        <?php include("menu.php")
+        //ici la boutique, on foreach tout les éléments de la bdd pour les afficher en appelant displayproduct
+        // les boutons servent a trier 
+        ?>
     </header>
 
     <div id="conteneur">
