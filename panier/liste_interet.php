@@ -1,6 +1,9 @@
 <?php
+if (isset($_SESSION)) {
+    session_start();
+};
 // debut session
-session_start();
+
 
 //connexion a la bdd 
 try {

@@ -17,7 +17,16 @@
 
     <script src="./JS/main.js"></script>
 
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function() {
+            $("#search").autocomplete({
+                source: "liste_interet.php",
+                minLength: 2
+            });
+        });
+    </script>
 
 </head>
 
@@ -39,7 +48,7 @@
                     <li> <span class="letotal">
                             <span id="total"><?= number_format($panier->total() * 1.196, 2, ',', ' ') ?></span>€
                         </span></li>
-                    <li> <input type="search" id="search" name="search" placeholder="Recherche..." autocomplete="on" />
+                    <li> <input type="search" id="search" name="search" placeholder="Recherche..." />
                     </li>
                     <?php
                     if (isset($_SESSION['user_name'])) {
