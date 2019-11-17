@@ -89,7 +89,7 @@ foreach ($events as $event) :
               <?php
                   if (($test['role']) == "membre du BDE") {
                     echo ('<form class="myform" methode="get" action="delete.php">
-                <button name="delete" type="delete" value="delete">
+                <button name="delete_comment" type="delete" value="delete_comment">
                   DELETE COMMENTAIRE
                   <input type="hidden" name="id_event" value=' . $event['id__Event'] . '>
                   <input type="hidden" name="id_comment" value=' . $comment['id'] . '>
