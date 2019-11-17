@@ -11,17 +11,14 @@ require_once '_header.php';
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <link rel="stylesheet" type="text/css" href="../assets/vendors/bootstrap/css/bootstrap.min.css">
-    <script src="../assets/vendors/jquery-3.4.1.min.js"></script>
 
     <link rel="stylesheet" href="../assets/vendors/fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
-    <script src="../assets/vendors/bootstrap/js/bootstrap.min.js"></script>
     <link rel="icon" href="../images/bde.png" />
 
     <title>Panier </title>
 
-    <script src="./JS/main.js"></script>
 </head>
 
 <body>

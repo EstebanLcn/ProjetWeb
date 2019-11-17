@@ -1,45 +1,57 @@
-/*.fond {
-    color: black;
-    background-color: white;
-    background-image: url(../images/fond.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}*/
-#banner {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    text-align: right;
-    height: 100vh;
-    background-image: url(https://img.freepik.com/vecteurs-libre/fond-polygonale-sombre-luxe_52683-26545.jpg?size=626&ext=jpg);
-    background-position: 50%;
-    background-position-x: 50%;
-    background-position-y: right;
+body {
+    background-image: url('../images/main.jpg');
+    /* on met une image de fond qui ce trouve dans le dossier image*/
     background-size: cover;
+    /* on spécifie la taille de l'image en arrière plans*/
+    background-repeat: no-repeat;
+    /* On évite que l'image soit répéter*/
+    height: 100em;
+    font-family: 'Numans', sans-serif;
+    width: 100em;
 }
 
+.card-header h3 {
+    color: white;
+    /*Couleur du texte de notre card*/
+}
 
 #titre {
     text-align: center;
-    color: floralwhite;
+    /*on centre notre titre*/
 }
 
-#left {
-    float: left;
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: black;
-    color: white;
-    text-align: center;
+@media screen and (min-width: 1000px) {
 
+    /*éxécuter que si notre écran fait au moins 1000px*/
+    .conteneur {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        text-align: center;
+        margin-left: 35%;
+        width: 50em;
+        padding: 1%;
+    }
 }
 
+@media screen and (max-width: 1000px) {
 
-/*@media (min-width: 768px) #right {
-    flex: 1;
-    display: block;
-}*/
+    /*éxécuter que si notre écran fait moin de  1000px*/
+    body {
+        background-clip: border-box;
+        background-origin: padding-box;
+        background-color: #f2f2f2;
+        background-repeat: no-repeat;
+        font-family: arial;
+        width: 100%;
+    }
+
+    .conteneur {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        text-align: center;
+        width: 50em;
+        padding: 10%;
+    }
+}
