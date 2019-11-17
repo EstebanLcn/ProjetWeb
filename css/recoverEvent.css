@@ -1,5 +1,4 @@
-.bigEvent{
- display: flex;
- justify-content: center;
- margin-left: 50%;
+.bigEvent {
+    display: flex;
+    justify-content: center;
 }
