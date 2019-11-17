@@ -73,6 +73,14 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
                 </div>
             </div>
 
+            <?php
+            echo ("vous etes: " . ($data['id_Role']));
+            if (($data['id_Role']) != "etudiant") {
+                echo ('<a class="btn btn-dark" href="../event/recurrentEvent.php" role="button">Creer un evennement</a>');
+            } else {
+                echo ("nada");
+            } ?>
+
 </body>
 
 </html>

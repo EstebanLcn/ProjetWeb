@@ -10,6 +10,7 @@ $query = $DB->db->prepare('CALL showEvent()');
 $query->execute();
 $events = $query->fetchAll();
 include('../header.php');
+
 //affiche tous les events, remplis avec les données de l'évènement
 var_dump($events);
 var_dump($_SESSION);
@@ -29,6 +30,7 @@ foreach ($events as $event) :
 
               <input name="participate" type="submit" value="<?php echo $_SESSION['user_name'] ?>">
             </form>
+
             <form method="get" action="addComment.php">
               <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
               <input type="hidden" name="id_user" value='1'>

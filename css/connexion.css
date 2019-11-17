@@ -1,11 +1,10 @@
-@media screen and (min-width: 1000px) {
-    body {
-        background-image: url('../images/main.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100%;
-        font-family: 'Numans', sans-serif;
-    }
+body {
+    background-image: url('../images/main.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    width: 100%;
 }
 
 .container {

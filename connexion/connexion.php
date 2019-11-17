@@ -16,12 +16,11 @@
         <div class="d-flex justify-content-center h-100">
             <div class="card">
                 <div class="card-header">
-                    <h3>Sign In</h3>
+                    <h3 id='titre'>Connexion</h3>
                 </div>
                 <div class="card-body">
                     <form method="post" action="scriptConnexion.php" autocomplete="on">
                         <!-- Création du formulaire de connexion avec une redirection quand une action est effectuer-->
-                        <h1 id=titre> Connexion </h1>
                         <p>
                             <label class="cent">Email : </label>
                             <input class="form-control" name="email" required="required" type="email" placeholder="email" />
