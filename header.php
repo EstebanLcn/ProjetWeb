@@ -15,7 +15,10 @@
 
             <h1 class="hey">BDE Cesi Bordeaux</h1>
             <?php
+           if (isset($_SESSION)) {
             session_start();
+          }
+            
             if (isset($_SESSION['user_name'])) {
                 echo '<div> <h5><a href="connexion/profil.php">' . $_SESSION['user_name']  . '</a> |  <a href="connexion/deconnexion.php">Deconnexion</a></h5></div>';
             } else {
