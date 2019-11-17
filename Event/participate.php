@@ -15,6 +15,7 @@ $requete = $DB->db->prepare('SELECT id__User from participate WHERE id=:_id_even
 $requete->bindValue(':_id_event', $_GET['id_event'], PDO::PARAM_STR);
 $requete->execute();
 $user = $requete->fetchAll();
+
 /*
 $query = $DB->db->prepare('INSERT INTO participate VALUES(:_id_event,(SELECT id FROM _user WHERE first_name=:_participate))
 ');
@@ -23,6 +24,7 @@ $query->bindValue(':_participate', $_GET['participate'], PDO::PARAM_STR);
 
 $query->execute();
 */
+
 for ($i = 0; $i < count($user); $i++) {
     if ($user[$i]['id__User'] == $id[0]['id']) {
         echo "<script>alert(\" Vous êtes déjà inscrit ! \")</script>";
