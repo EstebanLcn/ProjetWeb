@@ -5,6 +5,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
 $objet = (object) [
     "email" => $_POST['email'],
     "passwordd" => $_POST['password'],
+
 ];
 $_SESSION['transfert'] = $objet;
 

@@ -1,6 +1,6 @@
 <?php
 require_once '_header.php';
-
+//permet de vérifier quel tri on a effectué et si il a été effectué 
 
 if (isset($_GET['sort'])) {
     switch ($_GET['sort']) {

@@ -6,6 +6,8 @@ if (isset($_SESSION)) {
 
 
 //connexion a la bdd 
+// permet l'autocompletion grâce a la librairie jquery UI, en gros on compare ce que l'on rentre dans la search bar
+// avec la bdd 
 try {
     $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 } catch (Exception $e) {

@@ -25,6 +25,7 @@ foreach ($events as $event) :
 
 <form class="myform" methode="get" action="delete.php">
 <button name="delete" type="delete" value="delete">
+  DELETE PUBLICATION
 <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
 </form>
 </div>
@@ -68,10 +69,19 @@ foreach ($events as $event) :
               //affiche le contenu des commentaires    
               foreach ($comments as $comment) :
                 ?>
-              <p> 
+              <div>
                 <br>
-            l'utilisateur <?= $_SESSION['user_name']?> a écrit :  <?= $comment['texte'] ?>
-              <br></p>
+            l'utilisateur <?= $_SESSION['user_name']?> a écrit :  <?= $comment['texte'] ?> 
+            
+              <br></div>
+              <div>
+              <form class="myform" methode="get" action="delete.php">
+<button name="delete_comment" type="delete_comment" value="delete_comment">
+  DELETE COMMENTAIRE
+<input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
+<input type="hidden" name="id_comment" value='<?= $comment['id'] ?>'>
+
+</form></div>
               
             <?php endforeach; ?>
           
