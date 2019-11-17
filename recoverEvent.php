@@ -20,12 +20,18 @@ foreach ($events as $event) :
       <div class="card mb-4 shadow-sm">
         <?php echo "<img src='images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
         <div>
-
-          <form class="myform" methode="get" action="delete.php">
-            <button name="delete" type="delete" value="delete">
-              DELETE PUBLICATION
-              <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
-          </form>
+          <?php
+            $test = (array) $_SESSION['transfert_all'];
+            var_dump($test['role']);
+            if (($test['role']) == "personnel CESI") {
+              echo ('<form class="myform" methode="get" action="delete.php">
+                <button name="delete" type="delete" value="delete">
+                  DELETE PUBLICATION
+                <input type="hidden" name="id_event" value=' . $event['id__Event']  . '>
+                </form>');
+            } else {
+              echo ('');
+            } ?>
         </div>
         <div class="card-body">
 
@@ -74,13 +80,17 @@ foreach ($events as $event) :
 
               <br></div>
             <div>
-              <form class="myform" methode="get" action="delete.php">
-                <button name="delete_comment" type="delete_comment" value="delete_comment">
-                  DELETE COMMENTAIRE
-                  <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
-                  <input type="hidden" name="id_comment" value='<?= $comment['id'] ?>'>
-
-              </form>
+              <?php
+                  if (($test['role']) == "membre du BDE") {
+                    echo ('<form class="myform" methode="get" action="delete.php">
+                <button name="delete" type="delete" value="delete">
+                  DELETE PUBLICATION
+                  <input type="hidden" name="id_event" value=' . $event[' id__Event'] . '>
+                  <input type="hidden" name="id_comment" value=' . $comment[' id'] . '>
+              </form>');
+                  } else {
+                    echo ('');
+                  } ?>
             </div>
 
           <?php endforeach; ?>
