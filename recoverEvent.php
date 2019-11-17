@@ -20,7 +20,7 @@ foreach ($events as $event) :
 
     <div class="col-md-6 ">
       <div class="card mb-4 shadow-sm">
-        <?php echo "<img src='../images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
+        <?php echo "<img src='images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
         <div>
 
           <form class="myform" methode="get" action="delete.php">
