@@ -2,10 +2,26 @@
     display: flex;
     flex-wrap: wrap;
 }
-.descente{
-    display: inline;
+#descente{
     margin-left: 1%;
+    display: inline;
+
 }
 #fileid{
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+}
+.title_event{
+text-align: center;
+margin: auto;
+}
+#button_valid{
+    margin-top: 5%;
+}
+#container{
+    background-color: #C8C5C4;
+    min-height: 100%;
+}
+.tiger{
+    margin-top: 1%;
+    margin-left: 43%;
 }
