@@ -5,16 +5,17 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Profil</title>
+    <link rel="stylesheet" href="../css/project.css" />
+    <title>Evènements</title>
 </head>
 
 <body>
     <?php
-    session_start();
+    if (!isset($_SESSION)) {
+        session_start();
+    }
 
     $test = (array) $_SESSION['transfert'];
     $requete = $bdd->prepare('SELECT * FROM `_user` WHERE `email` = :test');
@@ -51,12 +52,15 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
     echo ('<br> l\'adresse mail : ' . $data['email']);
     echo (' <br> le role est : ' . $data['id_Role']);
     echo (' <br> la localisation est : ' . $data['id_Localisation']);
+    echo ('<br><img src=../' . $data['profile_picture'] . '>');
 
     $objet = (object) [
         "email" => $data['email'],
         "passwordd" => $data['password'],
         "role" => $data['id_Role'],
-        "localisation" => $data['id_Localisation']
+        "localisation" => $data['id_Localisation'],
+        "id" => $data['id'],
+        "profile_picture" => $data['profile_picture']
     ];
     $_SESSION['transfert_all'] = $objet; ?>
 
@@ -76,6 +80,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
             } else {
                 echo ("nada");
             } ?>
+
 </body>
 
 </html>
