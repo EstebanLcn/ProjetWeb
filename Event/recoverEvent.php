@@ -9,8 +9,11 @@ $query = $DB->db->prepare('CALL showEvent()');
 
 $query->execute();
 $events = $query->fetchAll();
+include('../header.php');
 
 //affiche tous les events, remplis avec les données de l'évènement
+var_dump($events);
+var_dump($_SESSION);
 
 foreach ($events as $event) :
   ?>
@@ -21,9 +24,13 @@ foreach ($events as $event) :
         <p class="card-text"> <?= $event['name'] ?> </p>
         <div class="d-flex justify-content-between align-items-center" \>
           <div class="btn-group">
-            <button type="button" class="btn btn-sm btn-outline-secondary">Like</button>
-            <? php //formulaire de création de commentaires
-              ?>
+            <form class="myform" methode="get" action="participate.php">
+
+              <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
+
+              <input name="participate" type="submit" value="<?php echo $_SESSION['user_name'] ?>">
+            </form>
+
             <form method="get" action="addComment.php">
               <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
               <input type="hidden" name="id_user" value='1'>
