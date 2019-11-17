@@ -105,3 +105,7 @@ foreach ($events as $event) :
     </div>
   </div>
 <?php endforeach;  ?>
+
+<footer>
+  <?php include('footer.php'); ?>
+</footer>
