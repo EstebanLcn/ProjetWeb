@@ -64,7 +64,13 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <a class="linkz" href="evenement.php">Rejoignez la soirée</a>
+      <?php
+      if (isset($_SESSION['user_name'])) {
+        echo ('<a class="linkz" href="Event/recoverEvent.php">Rejoignez la soirée</a>');
+      } else {
+        echo ('<p>Vous devez etre connecter pour voir les évènement</p>');
+      }
+      ?>
       <div class="border border-dark presentation">
 
         <p>Le BDE est une organisation à but non lucratif qui vise à promouvoir la vie associative du Cesi Bordeaux en donnant une impulsion aux projets et envies des étudiants. Nous avons pu par exemple organiser un gala, un week-end ski sans compter les nombreuses soirées actives que nous pratiquons en réservant bars, boites.</p>
