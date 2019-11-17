@@ -18,8 +18,10 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
 <body>
     <table>
         <form action="mailto: Obinus.obi@gmail.com" method="post" enctype="text/pain">
+            <!--On créer un formulaire qui une fois éxécuter renvoie vers notre boite de messagerie -->
             <p>
                 Sujet : <input name="sujet" maxlength="50" /><br />
+                <!--création de champ -->
                 Votre e-mail : <input name="email" maxlength="30" /><br />
                 Votre message : <textarea name="message" rows="6" cols="50"></textarea><br />
                 <input type="submit" value="Envoyez"><input type="reset" value="Effacer">

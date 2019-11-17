@@ -16,6 +16,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
     <link rel="stylesheet" href="../css/project.css" />
     <link rel="icon" href="../images/bde.png" />
     <link rel="stylesheet" href="../css/profil.css" />
+    <!--Ici on appelle tout nos fichiers css et boostrap-->
     <title>Home</title>
 </head>
 
@@ -23,26 +24,26 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
     <header>
         <div class="high">
             <a href="../home.php"> <img class="icon" src="../images/bde.png" alt="logo_bde"></a>
-
+            <!--Au clic sur l'icone sa nous renvoie vers le home-->
             <h1 class="hey">BDE Cesi Bordeaux</h1>
             <div class="inscription">
                 <?php
                 session_start();
                 echo '<div><a href="deconnexion.php">Deconnexion</a></h5></div>';
-
+                //on crée un bouton pour ce déconnecter
                 ?>
             </div>
         </div>
     </header>
     <?php
     if (!isset($_SESSION)) {
-        session_start();
+        session_start(); //on vérifie si session star n'a pas deja était , si ce n'est pas le cas on en fait une 
     }
 
-    $test = (array) $_SESSION['transfert'];
-    $requete = $bdd->prepare('SELECT * FROM `_user` WHERE `email` = :test');
+    $test = (array) $_SESSION['transfert']; //on transforme notre _SESSION['transfert'] en array pour faciliter l'exploitation
+    $requete = $bdd->prepare('SELECT * FROM `_user` WHERE `email` = :test'); //on écrit notre requete
     $requete->bindValue(':test', $test['email'], PDO::PARAM_STR);
-    $requete->execute();
+    $requete->execute(); // on éxécute notre requete
     $data = $requete->fetch();
     $requete->closeCursor();
     switch ($data['id_Localisation']) {
@@ -58,7 +59,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
         case "4":
             $data['id_Localisation'] = 'Strasbourg';
             break;
-    }
+    } //On transforme nos id en chaine de caractére , pour plus de lisibilitée a l'affichage
     switch ($data['id_Role']) {
         case "1":
             $data['id_Role'] = 'etudiant';
@@ -69,7 +70,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
         case "3":
             $data['id_Role'] = 'personnel CESI';
             break;
-    }
+    } //On transforme nos id en chaine de caractére , pour plus de lisibilitée a l'affichage
     $objet = (object) [
         "email" => $data['email'],
         "passwordd" => $data['password'],
@@ -77,7 +78,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
         "localisation" => $data['id_Localisation'],
         "id" => $data['id'],
         "profile_picture" => $data['profile_picture']
-    ];
+    ]; //on stocke toutes les données dans un object pour facilité accées au données que l'on a récupérer
     $_SESSION['transfert_all'] = $objet; ?>
 
             <div class="card cent">
@@ -86,10 +87,12 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
                     <p class="card-text"><?php echo ("adresse mail: " . $data['email'] . '<br>' . "mdp : " . $data['password'] . '<br>' . "role: " . $data['id_Role'] . '<br>' . "centre: " . $data['id_Localisation'])  ?></p>
                 </div>
             </div>
+            <!--On affiche nos données dans une card boostrap-->
 
             <?php
             if (($data['id_Role']) != "etudiant") {
                 echo ('<a class="btn btn-dark" href="../event/recurrentEvent.php" role="button">Creer un evennement</a>');
+                //Si l'utilisateur n'est pas un étudiant alors on affiche un bouton qui mène vers recurrentEvent.php
                 echo ('<a class="btn btn-dark" href="../event/reportEvent.php" role="button">Signaler evennement</a>');
             } ?>
             <footer class="jean">

@@ -1,7 +1,10 @@
 body {
     background-image: url('../images/main.jpg');
+    /* on met une image de fond qui ce trouve dans le dossier image*/
     background-size: cover;
+    /* on spécifie la taille de l'image en arrière plans*/
     background-repeat: no-repeat;
+    /* On évite que l'image soit répéter*/
     height: 100em;
     font-family: 'Numans', sans-serif;
     width: 100em;
@@ -9,13 +12,17 @@ body {
 
 .card-header h3 {
     color: white;
+    /*Couleur du texte de notre card*/
 }
 
 #titre {
     text-align: center;
+    /*on centre notre titre*/
 }
 
 @media screen and (min-width: 1000px) {
+
+    /*éxécuter que si notre écran fait au moins 1000px*/
     .conteneur {
         margin-top: 2%;
         margin-bottom: 2%;
@@ -28,6 +35,8 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+
+    /*éxécuter que si notre écran fait moin de  1000px*/
     body {
         background-clip: border-box;
         background-origin: padding-box;
