@@ -20,20 +20,13 @@ include('header.php');
 
 ?>
 
-    <form method="get" action="addEvent.php" >
-    <div class="form-group col-md-6">
     <form method="get" action="addEvent.php" class="form_recu" >
     <div class="form-group col-md-9">
             Titre: <br/>
             <input type="text" value="" name="title" required class="form-control" /><br/>
             </div>
-            Description: <br/>
-            <textarea name="content" value="content" required></textarea><br/>
             <div class="form-group col-md-3">
             Prix: <br/>
-            <input type="number" value="" name="price" min="0" max="1000" required /><br/>
-            photo: <br/>
-            <input type="file" name="url" value="" required><br/>
             <input type="number" value="" name="price" min="0" max="1000" required class="form-control"/><br/>
             </div>
             <div class="form-group col-md-12">
@@ -45,7 +38,6 @@ include('header.php');
             <input type="file" name="url" value=""  id="fileid" required><br/>
             <input type="submit" name="submit"/>
            
-         
          </div>
           
     </form>
