@@ -11,83 +11,79 @@
 <header>
 </header>
 
-<body class="fond">
-    <section id="banner">
-        <div id="left">
-            <form method="post" action="scriptInscription.php" autocomplete="on">
-                <!-- Création du formulaire de d'inscription avec une redirection quand une action est effectuer-->
-                <h1 id=titre> Inscription </h1>
-                <p>
-                    <label>Prenom : </label>
-                    <input class="form-control" name="firstname" required="required" type="text" placeholder="prenom" />
-                    <!-- Création d'un champ prenom -->
-                </p>
-                <p>
-                    <label>Nom : </label>
-                    <input class="form-control" name="name" required="required" type="text" placeholder="nom" />
-                </p>
-                <p>
-                    <label>Email : </label>
-                    <input class="form-control" name="email" required="required" type="email" placeholder="email" />
-                </p>
-                <p>
-                    <label for="inputPassword5">Mot de passe : </label>
-                    <input class="form-control" name="password" required="required" type="password" placeholder="mot de passe" />
-                    <small id="passwordHelpBlock" class="form-text text-muted ttc">
-                        Votre mot de passe doit contenir des lettres et des chiffres,une majuscule , et ne doit de caractères spéciaux ou d'emoji.
-                    </small>
-                </p>
-                <p>
-                    <label>Photo de profil : </label>
-                    <input class="form-control" name="photo" type="text" placeholder="Photo de profil" />
-                    <small id="passwordHelpBlock" class="form-text text-muted">
-                        Veuillez mettre un url pour l'image
-                    </small>
-                </p>
-                <p>
-                    <label>Campus : </label>
-                    <select name="campus" required="required" placeholder="campus" class="form-control">
-                        <option>Bordeaux</option>
-                        <option>Nancy</option>
-                        <option>Rouen</option>
-                        <option>Strasbourg</option>
-                    </select>
-                </p>
-                <p>
-                    <label>Statut : </label>
-                    <select name="statut" required="required" placeholder="campus" class="form-control">
-                        <option>etudiant</option>
-                        <option>membre du BDE</option>
-                        <option>personnel CESI</option>
-                    </select>
-                </p>
-                <p>
-                    <label>Mot de passe statut* : </label>
-                    <input class="form-control" name="MdpStatut" type="password" placeholder="Mot de passe statut" />
-                </p>
-                <p>*Ne rien mettre si vous êtes étudiant.</p>
-                <input class="btn btn-dark" type="submit" value="S'inscrire" />
-                </p>
-            </form>
-            <p id=erreur>
-                <?php
-                if (isset($_GET['var'])) {
-                    echo $_GET['var']; //Si on a une erreur , on echo l'erreur qui est stocker dans la variable var
-                }
-
-
-                ?>
-                <label>Déjà inscrit ?</label>
-                <a class="btn btn-warning" href="connexion.php?var=" role="button">Connexion</a>
-                <a class="btn btn-dark" href="../home.php" role="button">Home</a>
+<body>
+    <div class='conteneur'>
+        <div class="card-header">
+            <h3 id='titre'>Inscription</h3>
+        </div>
+        <form method="post" action="scriptInscription.php" autocomplete="on">
+            <!-- Création du formulaire de d'inscription avec une redirection quand une action est effectuer-->
+            <p>
+                <label>Prenom : </label>
+                <input class="form-control" name="firstname" required="required" type="text" placeholder="prenom" />
+                <!-- Création d'un champ prenom -->
             </p>
+            <p>
+                <label>Nom : </label>
+                <input class="form-control" name="name" required="required" type="text" placeholder="nom" />
+            </p>
+            <p>
+                <label>Email : </label>
+                <input class="form-control" name="email" required="required" type="email" placeholder="email" />
+            </p>
+            <p>
+                <label for="inputPassword5">Mot de passe : </label>
+                <input class="form-control" name="password" required="required" type="password" placeholder="mot de passe" />
+                <small id="passwordHelpBlock" class="form-text text-muted ttc">
+                    Votre mot de passe doit contenir des lettres et des chiffres,une majuscule , et ne doit de caractères spéciaux ou d'emoji.
+                </small>
+            </p>
+            <p>
+                <label>Photo de profil : </label>
+                <input class="form-control" name="photo" type="text" placeholder="Photo de profil" />
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                    Veuillez mettre un url pour l'image
+                </small>
+            </p>
+            <p>
+                <label>Campus : </label>
+                <select name="campus" required="required" placeholder="campus" class="form-control">
+                    <option>Bordeaux</option>
+                    <option>Nancy</option>
+                    <option>Rouen</option>
+                    <option>Strasbourg</option>
+                </select>
+            </p>
+            <p>
+                <label>Statut : </label>
+                <select name="statut" required="required" placeholder="campus" class="form-control">
+                    <option>etudiant</option>
+                    <option>membre du BDE</option>
+                    <option>personnel CESI</option>
+                </select>
+            </p>
+            <p>
+                <label>Mot de passe statut* : </label>
+                <input class="form-control" name="MdpStatut" type="password" placeholder="Mot de passe statut" />
+            </p>
+            <p>*Ne rien mettre si vous êtes étudiant.</p>
+            <input class="btn btn-dark" type="submit" value="S'inscrire" />
+            </p>
+        </form>
+        <p id=erreur>
+            <?php
+            if (isset($_GET['var'])) {
+                echo $_GET['var']; //Si on a une erreur , on echo l'erreur qui est stocker dans la variable var
+            }
 
-        </div>
-        <div>
-            <div></div>
-        </div>
-    </section>
+
+            ?>
+            <label>Déjà inscrit ?</label>
+            <!--Création de bouton qui nous renvoie vers connexion ou le home-->
+            <a class="btn btn-warning" href="connexion.php?var=" role="button">Connexion</a>
+            <a class="btn btn-dark" href="../home.php" role="button">Home</a>
+        </p>
+    </div>
 </body>
-
 
 </html>

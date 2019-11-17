@@ -17,8 +17,8 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
     session_start();
 
     $test = (array) $_SESSION['transfert'];
-    $requete = $bdd->prepare('SELECT * FROM `_user` WHERE `email` = \'thibaud@gmail.com\'');
-    $requete->bindValue(':test', '$test', PDO::PARAM_STR);
+    $requete = $bdd->prepare('SELECT * FROM `_user` WHERE `email` = :test');
+    $requete->bindValue(':test', $test['email'], PDO::PARAM_STR);
     $requete->execute();
     $data = $requete->fetch();
     $requete->closeCursor();
@@ -68,7 +68,14 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
                     <a href="#" class="card-link">Another link</a>
                 </div>
             </div>
-            ?>
+
+            <?php
+            echo ("vous etes: " . $data['id_Role']);
+            if (($data['id_Role']) == "membre du BDE" || "personnel CESI") {
+                echo ('<a class="btn btn-dark" href="../event/recurrentEvent.php" role="button">Creer un evennement</a>');
+            } else {
+                echo ("nada");
+            } ?>
 </body>
 
 </html>
