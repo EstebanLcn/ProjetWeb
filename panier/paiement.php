@@ -2,7 +2,7 @@
 include_once 'menu.php';
 require_once '_header.php';
 
-
+// si les conditions de ventes sont checkées ($_POST['check]) et que l'on est connecté  alors la commande est effectué et le mail envoyé
 if (isset($_POST['check']) && isset($_SESSION['user_name'])) {
     switch ($_POST['paiement']) {
         case 'paiement':
@@ -28,7 +28,7 @@ if (isset($_POST['check']) && isset($_SESSION['user_name'])) {
         default:
             echo "Erreur avec la commande";
             break;
-    }
+    } // si l'on est pas conneté alors on renvoie une erreur
 } elseif (!isset($_SESSION['user_name']) && isset($_POST['check'])) {
     echo "<script>alert(\" Veuillez vous connecter \")</script>";
     echo '
@@ -36,7 +36,7 @@ if (isset($_POST['check']) && isset($_SESSION['user_name'])) {
     <div class="hi"> <a href="../connexion/mention.php"> S\'inscrire</a>  |  <a href="../connexion/connexion.php?var=">Se connecter</a>
     </div>';
     echo "<a href='../connex.php'>retourner au panier</a>";
-} else {
+} else { // les conditions de ventes ne sont pas checkées !
     echo "<script>alert(\" Veuillez acceptez les conditions de ventes ! \")</script>";
     echo "<a href='panier.php'>retourner au panier</a>";
 }

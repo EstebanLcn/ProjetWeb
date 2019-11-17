@@ -1,4 +1,4 @@
-<?php
+<?php // classe panier 
 class panier
 {
     private $DB;
@@ -22,18 +22,23 @@ class panier
     }
     public function recalc()
     {
+
         //on empêche a l'utilisateur de soumettre de fausses valeurs 
         foreach ($_SESSION['panier'] as $product_id => $quantity) {
             if (isset($_POST['panier']['quantity']['$product_id'])) {
                 $_SESSION['panier'][$product_id] = $_POST['panier']['quantity'][$product_id];
             }
         }
+        // on établi la variable en ajoutant quantité
         $_SESSION['panier'] = $_POST['panier']['quantity'];
     }
+    //permet de compter les articles
     public function count()
     {
         return array_sum($_SESSION['panier']);
     }
+    //permet d'afficher le total en € 
+
     public function total()
     {
         $total = 0;
@@ -56,7 +61,7 @@ class panier
         } else {
             $_SESSION['panier'][$product_id] = 1;
         }
-    }
+    } // fonction de suppression de produit
     public function del($product_id)
     {
         unset($_SESSION['panier'][$product_id]);

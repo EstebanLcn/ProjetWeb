@@ -19,4 +19,5 @@ WHERE participate.id = input_id_event;
 
 COMMIT;
 
-END $$
+END
+$$

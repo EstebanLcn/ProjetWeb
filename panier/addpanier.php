@@ -1,5 +1,6 @@
 <?php
 require '_header.php';
+// récupère l'id des produits afin de les envoyer dans le panier
 $json = array('error' => true);
 if (isset($_GET['id'])) {
     $product = $DB->query('SELECT id FROM article WHERE id=:id', array('id' => $_GET['id']));

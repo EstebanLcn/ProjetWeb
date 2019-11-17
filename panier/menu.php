@@ -42,7 +42,7 @@
                     <li><a href="../home.php">Accueil</a></li>
                     <li><a href="boutique.php">Boutique</a></li>
                     <li><a href="panier.php">panier</a></li>
-                    <li> <span class="items">ITEMS
+                    <li> <span class="items">Objets :
                             <span id="count"><?= $panier->count(); ?></span>
                         </span></li>
                     <li> <span class="letotal">
