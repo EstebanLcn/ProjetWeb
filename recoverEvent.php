@@ -14,14 +14,12 @@ $query = $DB->db->prepare('CALL showEvent()');
 $query->execute();
 $events = $query->fetchAll();
 include('header.php');
-
 //affiche tous les events, remplis avec les données de l'évènement
-
 foreach ($events as $event) :
 
   ?>
   <div class="bigEvent">
-
+    <link rel="stylesheet" href="css/recoverEvent.css" />
     <div class="col-md-6 ">
       <div class="card mb-4 shadow-sm">
         <?php echo "<img src='images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
@@ -30,6 +28,7 @@ foreach ($events as $event) :
 
             $test = (array) $_SESSION['transfert_all'];
             if (($test['role']) == "membre du BDE") {
+
               echo ('<form class="myform" methode="get" action="delete.php">
                 <button name="delete" type="delete" value="delete">
                   DELETE PUBLICATION
