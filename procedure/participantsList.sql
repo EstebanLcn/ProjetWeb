@@ -11,11 +11,11 @@ BEGIN
 
 START TRANSACTION;
 
-SELECT _user.name, _user.first_name, utilisateur.prenom
+SELECT _user.name, _user.first_name
 FROM participate
     INNER JOIN
     _user ON participate.id__User = _user.id
-WHERE id__Event = input_id_event;
+WHERE participate.id = input_id_event;
 
 COMMIT;
 
