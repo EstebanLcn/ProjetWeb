@@ -6,6 +6,15 @@
 .cent {
     display: block;
     margin: auto;
-    margin-top: 25em;
-    width: 25%;
+    margin-top: 5%;
+    width: 75%;
+}
+
+.bouton {
+    margin-top: 2%;
+    text-align: center;
+}
+
+.btn.btn-dark {
+    margin: 0 2% 0 2%;
 }

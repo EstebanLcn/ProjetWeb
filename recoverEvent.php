@@ -18,6 +18,7 @@ include('header.php');
 foreach ($events as $event) :
 
   ?>
+
   <div class="bigEvent">
     <link rel="stylesheet" href="css/recoverEvent.css" />
     <div class="col-md-6 ">

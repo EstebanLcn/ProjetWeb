@@ -88,19 +88,17 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
                 </div>
             </div>
             <!--On affiche nos données dans une card boostrap-->
-
-            <?php
-            if (($data['id_Role']) != "etudiant") {
-                echo ('<a class="btn btn-dark" href="../recurrentEvent.php" role="button">Créer un évènement</a>');
-                //Si l'utilisateur n'est pas un étudiant alors on affiche un bouton qui mène vers recurrentEvent.php
-                echo ('<a class="btn btn-dark" href="../reportEvent.php" role="button">Signaler un évènement</a>');
-            } ?>
+            <div class="bouton">
+                <?php
+                if (($data['id_Role']) != "etudiant") {
+                    echo ('<a class="btn btn-dark" href="../recurrentEvent.php" role="button">Créer un évènement</a>');
+                    //Si l'utilisateur n'est pas un étudiant alors on affiche un bouton qui mène vers recurrentEvent.php
+                    echo ('<a class="btn btn-dark" href="../reportEvent.php" role="button">Signaler un évènement</a>');
+                } ?>
+            </div>
             <br> <br>
             <footer class="jean">
-                <a href="mentions_legales">Mentions légales</a>
-                <a href="contact_us">Contactez-nous</a>
-                <a href="#">Menu</a>
-                <a href="home.php">@Home</a>
+                <?php include('../footer.php'); ?>
 
             </footer>
 </body>
