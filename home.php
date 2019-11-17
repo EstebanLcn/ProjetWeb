@@ -136,7 +136,13 @@
         <div class="card" style="width: 18rem;">
           <img src="images/evenement.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p class="card-text"><a class="linkz" href="#">Evénements</a></p>
+            <?php
+            if (isset($_SESSION['user_name'])) {
+              echo ('<a class="linkz" href="Event/recoverEvent.php">Evenement</a>');
+            } else {
+              echo ('<p>Vous devez etre connecter pour voir les évènement</p>');
+            }
+            ?>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
