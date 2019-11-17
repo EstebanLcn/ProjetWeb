@@ -1,0 +1,11 @@
+.form_recu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.descente{
+    display: inline;
+    margin-left: 1%;
+}
+#fileid{
+    margin-bottom: 2%;
+}
