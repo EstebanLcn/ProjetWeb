@@ -1,3 +1,11 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
 <?php
 /*if(!isset($_SESSION)){
   session_start();
@@ -18,7 +26,7 @@ foreach ($events as $event) :
   ?>
   <div class="bigEvent">
 
-  <div class="col-md-6 ">
+  <div class="col-md-6 " id="yo">
     <div class="card mb-4 shadow-sm">
       <?php echo "<img src='../images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
       <div>
@@ -73,7 +81,8 @@ foreach ($events as $event) :
 <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
 <input type="hidden" name="id_comment" value='<?= $comment['id'] ?>'>
 
-</form></div>
+</form>
+</div>
               
             <?php endforeach; ?>
           
@@ -81,4 +90,9 @@ foreach ($events as $event) :
       </div>
       </div>
       </div>
+    
     <?php endforeach;  ?>
+    <?php include('footer.php');?>
+</body>
+
+</html>
