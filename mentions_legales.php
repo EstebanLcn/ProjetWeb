@@ -1,4 +1,4 @@
-<?php include 'header.php' ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -10,6 +10,10 @@
 </head>
 
 <body>
+<header>
+
+    <?php include 'header.php' ?>
+  </header>
   <div class="vente"> <strong>La seule contrepartie à l'utilisation de ces mentions légales, est l'engagement total à laisser le lien crédit subdelirium sur cette page de mentions légales.</strong><br />
     Vos mentions légales :
     <h2>Informations légales</h2>
