@@ -24,20 +24,20 @@ $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', ''
     <header>
         <div class="high">
             <a href="../home.php"> <img class="icon" src="../images/bde.png" alt="logo_bde"></a>
-            <!--Au clic sur l'icone sa nous renvoie vers le home-->
+            <!--Au clic sur l'icone ça nous renvoie vers le home-->
             <h1 class="hey">BDE Cesi Bordeaux</h1>
             <div class="inscription">
                 <?php
                 session_start();
                 echo '<div><a href="deconnexion.php">Deconnexion</a></h5></div>';
-                //on crée un bouton pour ce déconnecter
+                //on crée un bouton pour se déconnecter
                 ?>
             </div>
         </div>
     </header>
     <?php
     if (!isset($_SESSION)) {
-        session_start(); //on vérifie si session star n'a pas deja était , si ce n'est pas le cas on en fait une 
+        session_start(); //on vérifie si session start n'a pas deja était fait , si ce n'est pas le cas on en fait une 
     }
 
     $test = (array) $_SESSION['transfert']; //on transforme notre _SESSION['transfert'] en array pour faciliter l'exploitation

@@ -9,10 +9,10 @@ $objet = (object) [
 ];
 $_SESSION['transfert'] = $objet;
 
-$email = $_POST['email']; //on vient cherchez et mettre dans une variable ce qui a était mit dans le champ email(qui contenait un name email)
+$email = $_POST['email']; //on vient chercher et mettre dans une variable ce qui a était mit dans le champ email(qui contenait un name email)
 $passwordd = $_POST['password'];
 
-if (isset($_SESSION['user_name'])) { //on vérifie si un utilisateur est connecter
+if (isset($_SESSION['user_name'])) { //on vérifie si un utilisateur est connecté
     header('Location: ../home.php');
     exit();
 } else {
@@ -22,8 +22,8 @@ if (isset($_SESSION['user_name'])) { //on vérifie si un utilisateur est connect
     $requete->execute();
     $data = $requete->fetch();
     $requete->closeCursor();
-    var_dump($data['membre_valide']); // affichage de ce que renvoie notre requete
-    if ($data['membre_valide'] != '') { // on vérifie que le résultat de la requete n'est pas null
+    var_dump($data['membre_valide']); // affichage de ce que renvoie notre requête
+    if ($data['membre_valide'] != '') { // on vérifie que le résultat de la requête n'est pas null
         $_SESSION['user_name'] = $data['membre_valide'];
         header('Location: ../home.php');
         //var_dump($_SESSION['transfert']);

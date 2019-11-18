@@ -17,7 +17,7 @@
             <h3 id='titre'>Inscription</h3>
         </div>
         <form method="post" action="scriptInscription.php" autocomplete="on">
-            <!-- Création du formulaire de d'inscription avec une redirection quand une action est effectuer-->
+            <!-- Création du formulaire d'inscription avec une redirection quand une action est effectuée-->
             <p>
                 <label>Prenom : </label>
                 <input class="form-control" name="firstname" required="required" type="text" placeholder="prenom" />
@@ -73,13 +73,13 @@
         <p id=erreur>
             <?php
             if (isset($_GET['var'])) {
-                echo $_GET['var']; //Si on a une erreur , on echo l'erreur qui est stocker dans la variable var
+                echo $_GET['var']; //Si on a une erreur , on echo l'erreur qui est stockée dans la variable var
             }
 
 
             ?>
             <label>Déjà inscrit ?</label>
-            <!--Création de bouton qui nous renvoie vers connexion ou le home-->
+            <!--Création d'un bouton qui nous renvoie vers connexion ou le home-->
             <a class="btn btn-warning" href="connexion.php?var=" role="button">Connexion</a>
             <a class="btn btn-dark" href="../home.php" role="button">Home</a>
         </p>

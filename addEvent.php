@@ -1,9 +1,7 @@
 <?php
 require 'dbh.php';
 $DB=new DB();
-/*if(!isset($_SESSION)){
-  session_start();
-}*/
+
 echo $_GET['title']."|";
 echo $_GET['content']."|";
 echo $_GET['price']."|";

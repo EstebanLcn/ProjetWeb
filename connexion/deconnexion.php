@@ -1,7 +1,7 @@
 <?php
 session_start();
-if (isset($_SESSION['user_name'])) { //on vérifie si un utilisateur est connecter
-    session_unset(); // enléve toute les variable
+if (isset($_SESSION['user_name'])) { //on vérifie si un utilisateur est connecté
+    session_unset(); // enléve toutes les variables
     session_destroy(); // détruit la session
     header('Location: ../home.php'); // redirection au home
     $var = " ";

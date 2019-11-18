@@ -2,13 +2,13 @@
 $bdd = new PDO('mysql:host=localhost;dbname=projet_web;charset=utf8', 'root', '');
 
 if (!isset($_SESSION)) {
-    session_start(); //on vérifie si session star n'a pas deja était , si ce n'est pas le cas on en fait une 
+    session_start(); //on vérifie si session start n'a pas deja était , si ce n'est pas le cas on en fait une 
 }
 
 $test = (array) $_SESSION['transfert']; //on transforme notre _SESSION['transfert'] en array pour faciliter l'exploitation
-$requete = $bdd->prepare('SELECT * FROM `_user` WHERE `email` = :test'); //on écrit notre requete
+$requete = $bdd->prepare('SELECT * FROM `_user` WHERE `email` = :test'); //on écrit notre requête
 $requete->bindValue(':test', $test['email'], PDO::PARAM_STR);
-$requete->execute(); // on éxécute notre requete
+$requete->execute(); // on éxécute notre requête
 $data = $requete->fetch();
 $requete->closeCursor();
 switch ($data['id_Localisation']) {
