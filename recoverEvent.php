@@ -25,6 +25,19 @@ foreach ($events as $event) :
       <div class="card mb-4 shadow-sm">
         <?php echo "<img src='images/" . $event['url'] . "' class='card-img-top' alt='Image'> "; ?>
         <div>
+          <div>
+            <form class="myform" methode="get" action="like.php">
+              <button name="like" type="like" value="like">
+                <input type="hidden" name="id_event" value=<?= $event['id__Event'] ?>>
+                <input name="participate" type="hidden" value="<?= $_SESSION['user_name'] ?>">
+                Liker l'évènement
+
+            </form>
+          </div>
+          <div>
+            <span>
+              <?php include('likedisplay.php') ?>
+            </span></div>
           <?php
 
             $test = (array) $_SESSION['transfert_all'];
@@ -46,6 +59,7 @@ foreach ($events as $event) :
           <div class="d-flex justify-content-between align-items-center" \>
             <div class="btn-group">
 
+
               <form class="myform" methode="get" action="participate.php">
 
                 <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
@@ -54,13 +68,16 @@ foreach ($events as $event) :
 
               </form>
 
-              <form method="get" action="addcsv.php">
+              <?php if (($test['role']) == "membre du BDE") {
+                  echo ('<form method="get" action="addcsv.php">
 
                 <input name="export to csv" type="submit" value="export">
-                <input name="id__Event" type="hidden" value="<?php echo  $event['id__Event'] ?>">
+                <input name="id__Event" type="hidden" value=' . $event['id__Event'] . '>
 
-              </form>
+              </form> ');
+                }
 
+                ?>
               <form method="get" action="addComment.php">
                 <input type="hidden" name="id_event" value='<?= $event['id__Event'] ?>'>
                 <input name="user_name" type="hidden" value="<?php echo $_SESSION['user_name'] ?>">
@@ -82,10 +99,25 @@ foreach ($events as $event) :
               ?>
             <div>
               <br>
-              l'utilisateur <?= $_SESSION['user_name'] ?> a écrit : <?= $comment['texte'] ?>
 
+              L'utilisateur <?php echo $comment['id__User'] ?> a écrit : <?= $comment['texte'] ?>
+              <form class="myform" methode="get" action="like.php">
+                <button name="like" type="like" value="like">
+                  <input type="hidden" name="id_event" value=<?= $event['id__Event'] ?>>
+                  <input type="hidden" name="id_comment" value=<?= $comment['id'] ?>>
+                  <input name="participate" type="hidden" value="<?= $_SESSION['user_name'] ?>">
+
+                  Like
+
+
+              </form>
+            </div>
+            <div><span>
+                <?php include('likedisplay.php') ?>
+              </span>
               <br></div>
             <div>
+
               <?php
                   if (($test['role']) == "membre du BDE") {
                     echo ('<form class="myform" methode="get" action="delete.php">
@@ -94,9 +126,7 @@ foreach ($events as $event) :
                   <input type="hidden" name="id_event" value=' . $event['id__Event'] . '>
                   <input type="hidden" name="id_comment" value=' . $comment['id'] . '>
               </form>');
-                  } else {
-                    echo ('');
-                  } ?>
+                  } else { } ?>
             </div>
 
           <?php endforeach; ?>
